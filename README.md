@@ -1,9 +1,13 @@
-# SinoScout™ — 1688 True Factory Verifier & USITC HTS Landed Cost Engine
+SinoScout™ — 1688 True Factory Verifier & USITC HTS Landed Cost Calculator
+Live Interactive Web App (Free, No Login Required): https://sinoscout.vercel.app/
 
-**SinoScout™** is a cross-border supply chain intelligence tool built for US Amazon FBA, TikTok Shop US, Etsy, and Shopify brand owners.
+SinoScout™ is a US-China cross-border supply chain intelligence engine built for Amazon FBA, TikTok Shop US, Etsy, and Shopify sellers to bypass AliExpress/Alibaba trading middlemen and source directly from verified Chinese manufacturers on 1688.com.
 
-## Key Capabilities
-1. **1688 EXW to US Doorstep Landed Cost Engine**: Real-time USD/CNH conversion, Air/Sea DDP freight calculation, and USITC HTS + Section 301 China tariff simulation.
-2. **6-Factor 1688 True Factory Verifier**: Filter out trading middlemen by auditing Super Factory (`超级工厂`) and Bull Head (`牛头实力商家`) badges, business license manufacturing scope (`生产/制造/加工`), 30-day B2B repurchase rates (`回头率`), and primary Chinese industrial belt alignment.
-3. **Native Chinese B2B Negotiation Script Generator**: Auto-generate professional AliWangWang / WeChat factory procurement scripts.
-4. **$29 Done-For-You 1688 Sourcing Audit**: 24-hour custom factory verification and landed-cost dossier service.
+Core Features
+1688 EXW to US Doorstep Landed Cost Calculator: Converts 1688 RMB prices into USD and calculates exact USITC HTS Base Duty + Section 301 China Tariffs and Air/Sea DDP Freight per kg ($2.20/kg Sea vs. $5.80/kg Air DDP).
+
+6-Factor 1688 True Factory Verifier: Scores any supplier's business license scope (生产/加工 Manufacturing vs. 批发/贸易 Trading middleman), 30-day repurchase rate (回头率), and industrial belt match.
+
+Native Chinese B2B Factory Inquiry Script: Auto-generates an insider Chinese procurement script for AliWangWang/WeChat requesting 3 QC samples ahead of a 200-unit initial run (首单200件起订).
+
+Launch the free calculator here: https://sinoscout.vercel.app/
