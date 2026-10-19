@@ -1203,5 +1203,117 @@
       recalculateVerifier();
     });
   </script>
+  <!-- ==================== SINOSCOUT V1.3 ALL-CATEGORY & CREEM UPGRADE PATCH ==================== -->
+<script>
+(function() {
+  var CREEM_URL = 'https://www.creem.io/payment/prod_5NMSi2soem8Hs8hz60ce25';
+  var rules = [
+    { keys: ['phone case','magsafe','iphone','earbud','airpod','charger','power bank','cable'], cn: '磁吸手机壳 3C数码配件 源头工厂', belt: 'Shenzhen Huaqiangbei / Dongguan (深圳东莞3C数码产业带)', hts: '0.128' },
+    { keys: ['tumbler','water bottle','thermos','flask','mug','cup','stanley','insulated'], cn: '不锈钢保温杯 车载冰霸杯 源头工厂', belt: 'Yongkang / Wuyi, Zhejiang (浙江永康五金保温杯产业带)', hts: '0.147' },
+    { keys: ['baby','silicone','bib','teether','pacifier','feeding','toddler'], cn: '食品级硅胶母婴用品 宝宝辅食碗 源头工厂', belt: 'Dongguan / Shenzhen Silicone Cluster (东莞硅胶母婴制品产业带)', hts: '0.114' },
+    { keys: ['beauty','red light','gua sha','facial','massager','massage gun','curler','skincare'], cn: '美容仪 红光导入仪 个人护理源头工厂', belt: 'Shenzhen / Zhongshan Beauty Appliances (深圳美容器械产业带)', hts: '0.275' },
+    { keys: ['yoga','fitness','pilates','resistance band','dumbbell','gym','workout'], cn: '瑜伽垫 普拉提健身器材 源头工厂', belt: 'Yiwu / Nantong Fitness Gear Cluster (江苏南通/义乌健身器材产业带)', hts: '0.121' },
+    { keys: ['pet','dog','cat','grooming','litter','leash','collar','feeder'], cn: '宠物用品 智能喂食器牵引绳 源头工厂', belt: 'Suzhou / Wenzhou Pet Supplies Cluster (苏州小家电/温州宠物用品产业带)', hts: '0.289' },
+    { keys: ['neon','led','lamp','night light','strip light','lighting'], cn: 'LED氛围灯 柔性霓虹灯牌 源头厂家', belt: 'Zhongshan Guzhen / Shenzhen Lighting (广东中山古镇灯饰产业带)', hts: '0.102' },
+    { keys: ['coffee','espresso','blender','juicer','air fryer','kettle','kitchen'], cn: '便携咖啡机 厨房小家电 源头超级工厂', belt: 'Shunde / Zhongshan Small Appliances (广东顺德厨房小家电产业带)', hts: '0.289' },
+    { keys: ['bag','backpack','tote','wallet','pouch','luggage','makeup bag','purse'], cn: '跨境爆款收纳包 双肩包箱包 源头工厂', belt: 'Guangzhou Shiling / Baigou Luggage Belt (广州狮岭/白沟箱包产业带)', hts: '0.195' },
+    { keys: ['jewelry','necklace','earring','bracelet','ring','hair claw','sunglasses'], cn: '钛钢镀金首饰 抓夹配饰 源头工厂', belt: 'Yiwu / Qingdao Fashion Jewelry Belt (浙江义乌/山东青岛饰品产业带)', hts: '0.185' },
+    { keys: ['camping','tent','hammock','flashlight','lantern','hiking','outdoor'], cn: '户外露营装备 折叠椅帐篷 源头工厂', belt: 'Ningbo / Yongkang Outdoor Gear Belt (浙江宁波/永康户外露营产业带)', hts: '0.121' },
+    { keys: ['toy','plush','puzzle','fidget','doll','game'], cn: '跨境益智玩具 毛绒公仔 源头工厂', belt: 'Shantou Chenghai / Yiwu Toy Cluster (广东汕头澄海玩具产业带)', hts: '0.075' },
+    { keys: ['shirt','hoodie','leggings','dress','socks','hat','activewear','jacket'], cn: '跨境无缝瑜伽服 潮流卫衣 源头服装厂', belt: 'Guangzhou / Yiwu Seamless Apparel (广州/义乌无缝服装产业带)', hts: '0.240' }
+  ];
+  var dict = { magnetic:'磁吸', modular:'模块化', desk:'桌面', organizer:'收纳盒', portable:'便携式', wireless:'无线', electric:'电动', smart:'智能', stainless:'不锈钢', silicone:'硅胶', acrylic:'亚克力', wooden:'实木', bamboo:'竹制', leather:'真皮', waterproof:'防水', foldable:'可折叠', mini:'迷你', travel:'旅行', car:'车载', holder:'支架', stand:'底座', cleaner:'清洁器', brush:'清洁刷', mat:'垫子', bottle:'水杯', fan:'风扇' };
+
+  window.addEventListener('DOMContentLoaded', function() {
+    if (window.i18nDict) {
+      i18nDict.en.badge_v1 = 'US-China Sourcing SaaS V1.3 · All-Category';
+      i18nDict.zh.badge_v1 = '中美供应链套利引擎 V1.3 · 全品类智能版';
+      i18nDict.en.lbl_prod_name = 'Type ANY Product Name / SKU (Auto-Translates to 1688)';
+    }
+    var badge = document.querySelector('[data-i18n="badge_v1"]');
+    if (badge) badge.textContent = 'US-China Sourcing SaaS V1.3 · All-Category';
+    var prodLbl = document.querySelector('[data-i18n="lbl_prod_name"]');
+    if (prodLbl) prodLbl.textContent = 'Type ANY Product Name / SKU (Auto-Translates to 1688)';
+
+    var htsSel = document.getElementById('htsCategorySelect');
+    if (htsSel && htsSel.options.length < 8) {
+      var extra = [
+        ['0.128','3926.90.99','Phone Cases, MagSafe & 3C Accessories (HTS 3926.90) — 12.8%'],
+        ['0.147','7323.93.00','Stainless Tumblers, Flasks & Cookware (HTS 7323.93) — 14.7%'],
+        ['0.121','9506.91.00','Fitness, Yoga Mats & Camping Gear (HTS 9506.91) — 12.1%'],
+        ['0.275','9019.10.20','Beauty Devices, Massage Guns & Personal Care (HTS 9019.10) — 27.5%'],
+        ['0.185','7117.19.90','Fashion Jewelry & Hair Accessories (HTS 7117.19) — 18.5%'],
+        ['0.240','6109.10.00','Apparel, Activewear & Textiles (HTS 6109.10) — 24.0%']
+      ];
+      extra.forEach(function(o) {
+        var opt = document.createElement('option');
+        opt.value = o[0]; opt.setAttribute('data-code', o[1]); opt.textContent = o[2];
+        htsSel.appendChild(opt);
+      });
+    }
+
+    var prodInput = document.getElementById('prodNameInput');
+    var cnInput = document.getElementById('cnKeywordInput');
+    if (prodInput && cnInput) {
+      prodInput.placeholder = 'Type any product: e.g. Tumbler, Yoga Mat, Phone Case, Baby Bib...';
+      var row = prodInput.closest('.grid');
+      var beltBar = document.createElement('div');
+      beltBar.className = 'bg-slate-900/90 border border-teal-500/30 rounded-xl px-3.5 py-2.5 flex flex-wrap items-center justify-between gap-2 text-xs mt-2';
+      beltBar.innerHTML = '<div><span class="px-2 py-0.5 rounded bg-teal-500/20 text-teal-300 font-semibold mr-2">Matched Industrial Belt</span><span id="v13BeltText" class="text-slate-200 font-medium">Ningbo / Taizhou, Zhejiang (模具注塑产业带)</span></div>' +
+        '<div class="flex flex-wrap items-center gap-1.5"><span class="text-slate-400">Try:</span>' +
+        '<button type="button" data-q="MagSafe Phone Case" class="v13-chip px-2 py-0.5 rounded bg-slate-800 hover:bg-teal-600/30 text-teal-300 border border-slate-700">Phone Case</button>' +
+        '<button type="button" data-q="40oz Stainless Tumbler" class="v13-chip px-2 py-0.5 rounded bg-slate-800 hover:bg-teal-600/30 text-teal-300 border border-slate-700">Tumbler</button>' +
+        '<button type="button" data-q="Silicone Baby Bib" class="v13-chip px-2 py-0.5 rounded bg-slate-800 hover:bg-teal-600/30 text-teal-300 border border-slate-700">Baby Silicone</button>' +
+        '<button type="button" data-q="Red Light Beauty Wand" class="v13-chip px-2 py-0.5 rounded bg-slate-800 hover:bg-teal-600/30 text-teal-300 border border-slate-700">Beauty Wand</button>' +
+        '<button type="button" id="v13Open1688" class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/40 font-semibold ml-1">Search 1688.com ↗</button></div>';
+      if (row && row.parentNode) row.parentNode.insertBefore(beltBar, row.nextSibling);
+
+      function translateNow(val) {
+        var t = (val || '').toLowerCase().trim();
+        if (!t) return;
+        for (var i = 0; i < rules.length; i++) {
+          for (var j = 0; j < rules[i].keys.length; j++) {
+            if (t.indexOf(rules[i].keys[j]) !== -1) {
+              cnInput.value = rules[i].cn;
+              document.getElementById('v13BeltText').textContent = rules[i].belt;
+              if (htsSel) htsSel.value = rules[i].hts;
+              if (window.recalculateEconomics) recalculateEconomics();
+              return;
+            }
+          }
+        }
+        var words = t.replace(/[^a-z0-9\s]/g, ' ').split(/\s+/);
+        var cn = [];
+        words.forEach(function(w) { if (dict[w]) cn.push(dict[w]); });
+        cnInput.value = cn.length ? (cn.join('') + ' 跨境专供 源头工厂') : (val.trim() + ' 外贸定制 源头工厂');
+        document.getElementById('v13BeltText').textContent = 'Yiwu / Shenzhen / Ningbo Export Cluster (义乌/深圳/宁波综合跨境产业带)';
+        if (window.recalculateEconomics) recalculateEconomics();
+      }
+
+      prodInput.addEventListener('input', function() { translateNow(this.value); });
+      var chips = beltBar.querySelectorAll('.v13-chip');
+      for (var c = 0; c < chips.length; c++) {
+        chips[c].addEventListener('click', function() {
+          var q = this.getAttribute('data-q');
+          prodInput.value = q;
+          translateNow(q);
+          if (window.showToast) showToast('Auto-matched 1688 keyword: ' + q);
+        });
+      }
+      document.getElementById('v13Open1688').addEventListener('click', function() {
+        window.open('https://s.1688.com/selloffer/offer_search.htm?keywords=' + encodeURIComponent(cnInput.value), '_blank', 'noopener,noreferrer');
+      });
+    }
+
+    var orderBtn = document.getElementById('submitAuditOrderBtn');
+    if (orderBtn) {
+      orderBtn.textContent = 'Proceed to $29 Pro Dossier Checkout (Instant Access) →';
+      orderBtn.addEventListener('click', function() {
+        window.open(CREEM_URL, '_blank', 'noopener,noreferrer');
+      });
+    }
+  });
+})();
+</script>
 </body>
 </html>
