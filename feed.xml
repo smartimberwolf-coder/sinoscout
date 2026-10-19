@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+  <title>SinoScout — 1688 Direct Factory &amp; US HTS Tariff Intelligence</title>
+  <link>https://sinoscout.vercel.app/</link>
+  <description>Actionable guides, USITC HTS Section 301 tariff breakdowns, and 1688 true factory verification checklists for US Amazon FBA, TikTok Shop, and Shopify sellers.</description>
+  <language>en-us</language>
+  <atom:link href="https://sinoscout.vercel.app/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>How to Verify a True Factory on 1688 vs Trading Middlemen (4 Chinese Characters Checklist)</title>
+    <link>https://sinoscout.vercel.app/1688-factory-verification-guide.html</link>
+    <guid isPermaLink="true">https://sinoscout.vercel.app/1688-factory-verification-guide.html</guid>
+    <pubDate>Mon, 19 Oct 2026 06:00:00 GMT</pubDate>
+    <description>Learn the exact 4 Chinese business license characters (生产/制造/加工 vs 批发/贸易) to filter out 65% of 1688 middlemen and save 25%-45% on EXW factory pricing.</description>
+    <content:encoded><![CDATA[
+      <p>Roughly 65% to 70% of suppliers on 1688.com and Alibaba are trading companies or domestic resellers marking up factory EXW prices by 25% to 45%. Before ordering a single sample, run this 4-step verification checklist:</p>
+      <h3>1. Inspect the Business License Scope (经营范围)</h3>
+      <p>Click the supplier registration badge (企业档案) on 1688 and inspect the <strong>经营范围 (Business Scope)</strong> line:</p>
+      <ul>
+        <li><strong>True Manufacturer:</strong> Must explicitly include <strong>生产</strong> (Production), <strong>制造</strong> (Manufacturing), or <strong>加工</strong> (Processing).</li>
+        <li><strong>Trading Middleman:</strong> Lists only <strong>批发</strong> (Wholesale), <strong>零售</strong> (Retail), <strong>贸易</strong> (Trading), or <strong>电子商务</strong> (E-commerce).</li>
+      </ul>
+      <h3>2. Match the City to China Primary Industrial Belts (源头产业带)</h3>
+      <p>Injection-molded acrylic and plastic organizers belong in <strong>Ningbo/Taizhou (Zhejiang)</strong>; small pet appliances belong in <strong>Suzhou/Ningbo</strong>; LED signs belong in <strong>Shenzhen/Zhongshan</strong>.</p>
+      <h3>3. Check for Bull Head (牛头实力商家) or Super Factory (超级工厂) + 25%+ Repurchase Rate (回头率)</h3>
+      <p>Basic Chengxintong membership only costs 6,688 RMB/year. Look for TUV/SGS onsite audited Super Factories and a 30-day buyer repurchase rate above 25%.</p>
+      <p>Run the interactive 6-factor 1688 True Factory Scorer and copy our native Chinese AliWangWang/WeChat negotiation script free at <a href="https://sinoscout.vercel.app/">SinoScout (https://sinoscout.vercel.app/)</a>.</p>
+    ]]></content:encoded>
+  </item>
+
+  <item>
+    <title>1688 to Amazon FBA &amp; TikTok Shop US Landed Cost Calculator (RMB to USD + DDP Freight)</title>
+    <link>https://sinoscout.vercel.app/1688-to-amazon-fba-calculator.html</link>
+    <guid isPermaLink="true">https://sinoscout.vercel.app/1688-to-amazon-fba-calculator.html</guid>
+    <pubDate>Mon, 19 Oct 2026 06:05:00 GMT</pubDate>
+    <description>Compare 1688 direct factory EXW pricing against AliExpress middlemen with real-time RMB-to-USD conversion, Air/Sea DDP freight per kg, and USITC HTS duties.</description>
+    <content:encoded><![CDATA[
+      <p>When scaling a product on Amazon FBA or TikTok Shop US, switching from AliExpress ($11.50/unit) to a verified 1688 Ningbo factory (24 RMB / $3.59 EXW) can increase your net margin from 38.2% to 60.1%—adding over $1,350 in extra net profit on a 200-unit batch.</p>
+      <h3>Complete Landed Cost Formula (Per Unit)</h3>
+      <ul>
+        <li><strong>1. Factory EXW + CN Domestic Freight:</strong> (RMB Price + 2.5 RMB domestic shipping to Shenzhen/Yiwu 3PL) / USD-CNH FX Rate.</li>
+        <li><strong>2. Cross-Border DDP Freight + 3PL Prep:</strong> (Unit Weight kg * $2.20 Sea DDP or $5.80 Air DDP) + $0.20 FNSKU/QC fee.</li>
+        <li><strong>3. US Customs HTS Duty + Section 301 Tariff:</strong> Declared EXW USD * Combined HTS Duty Rate (e.g., 11.4% for HTS 3926.10).</li>
+      </ul>
+      <p>Test your exact SKU margins free with the interactive <a href="https://sinoscout.vercel.app/1688-to-amazon-fba-calculator.html">SinoScout 1688-to-US Landed Cost Calculator</a>.</p>
+    ]]></content:encoded>
+  </item>
+
+  <item>
+    <title>US China Section 301 Tariff &amp; HTS Duty Cheat Sheet for E-Commerce Importers</title>
+    <link>https://sinoscout.vercel.app/china-section-301-tariff-hts-calculator.html</link>
+    <guid isPermaLink="true">https://sinoscout.vercel.app/china-section-301-tariff-hts-calculator.html</guid>
+    <pubDate>Mon, 19 Oct 2026 06:10:00 GMT</pubDate>
+    <description>Quick reference guide to combined MFN base duties and Section 301 China tariffs across top e-commerce HTS categories.</description>
+    <content:encoded><![CDATA[
+      <p>Importing from 1688 or Alibaba into the United States requires accounting for both the Most Favored Nation (MFN) base duty and Section 301 China tariffs:</p>
+      <ul>
+        <li><strong>HTS 3926.10.00 (Plastic &amp; Acrylic Organizers):</strong> 3.9% Base + 7.5% Sec. 301 = <strong>11.4% Total Duty</strong></li>
+        <li><strong>HTS 8509.80.50 (Small Home &amp; Pet Appliances):</strong> 3.9% Base + 25.0% Sec. 301 = <strong>28.9% Total Duty</strong></li>
+        <li><strong>HTS 9405.42.80 (LED Signs &amp; Decorative Lamps):</strong> 2.7% Base + 7.5% Sec. 301 = <strong>10.2% Total Duty</strong></li>
+        <li><strong>HTS 4202.92.31 (Travel Bags &amp; Cases):</strong> 12.0% Base + 7.5% Sec. 301 = <strong>19.5% Total Duty</strong></li>
+      </ul>
+      <p>Calculate your exact customs duty and DDP freight per unit at <a href="https://sinoscout.vercel.app/">https://sinoscout.vercel.app/</a>.</p>
+    ]]></content:encoded>
+  </item>
+</channel>
+</rss>

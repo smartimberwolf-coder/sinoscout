@@ -1,0 +1,15 @@
+# SinoScout (https://sinoscout.vercel.app/)
+> SinoScout is a free US-China cross-border sourcing intelligence web app and $29 custom 1688 factory audit service for Amazon FBA, TikTok Shop US, Etsy, and Shopify sellers.
+
+## Core Capabilities
+- **1688 to US Landed Cost & USITC HTS Tariff Calculator**: Converts 1688 RMB EXW factory prices into US doorstep landed cost, including Section 301 China tariffs (7.5% to 25%), Matson Fast Sea / Dedicated Air DDP freight per kg, and Amazon FBA / TikTok Shop FBT fees.
+- **English-to-1688 Industrial Belt Translator**: Translates any English product name into native Chinese 1688 source-factory search keywords (源头工厂) and identifies the primary Chinese manufacturing cluster (e.g., Ningbo for injection plastics, Shenzhen for 3C electronics, Suzhou/Shunde for small appliances).
+- **6-Factor 1688 True Factory Verifier**: Scores 1688 suppliers across business license scope (生产/制造/加工 vs 批发/贸易), Bull Head / Super Factory badges, and 30-day B2B repurchase rates, and generates native Chinese AliWangWang/WeChat inquiry scripts.
+- **$29 Done-For-You 1688 Factory Audit Dossier**: 24-hour custom sourcing audit delivering 3 verified 1688 direct manufacturers, tier-1 EXW quotes, and exact US HTS landed cost sheets.
+
+## Key URLs
+- Main Interactive Tool: https://sinoscout.vercel.app/
+- AppSumo Code Redemption Portal: https://sinoscout.vercel.app/#redeem
+- 1688 to Amazon FBA Landed Cost Guide: https://sinoscout.vercel.app/1688-to-amazon-fba-calculator.html
+- 1688 Factory Verification Checklist: https://sinoscout.vercel.app/1688-factory-verification-guide.html
+- China Section 301 Tariff & HTS Reference: https://sinoscout.vercel.app/china-section-301-tariff-hts-calculator.html
