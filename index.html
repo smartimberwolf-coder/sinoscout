@@ -87,6 +87,11 @@
           中文 (董事长视图)
         </button>
 
+        <button id="headerRedeemBtn" type="button"
+          class="px-3 py-1.5 rounded-lg text-xs font-bold border border-amber-400/60 bg-amber-500/15 text-amber-300 hover:bg-amber-500/25 transition">
+          🌮 Redeem AppSumo Code
+        </button>
+
         <button id="headerAuditBtn" type="button"
           class="px-3.5 py-1.5 rounded-lg text-xs font-bold bg-gradient-to-r from-emerald-500 to-teal-600 text-white hover:opacity-95 transition shadow-md shadow-teal-600/20"
           data-i18n="header_cta">
@@ -107,7 +112,7 @@
         <span>3.</span> <span data-i18n="tab_samples">Viral Teardown Case Library (4 Presets)</span>
       </button>
       <button type="button" data-tab="audit" class="nav-tab-btn px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold border border-slate-800 bg-slate-900/70 text-slate-300 hover:text-white whitespace-nowrap transition flex items-center gap-2">
-        <span>4.</span> <span data-i18n="tab_audit">SinoScout™ Pro Dossier ($29) & Partner Hub</span>
+        <span>4.</span> <span data-i18n="tab_audit">$29 Custom Sourcing Audit & AppSumo Redeem</span>
       </button>
     </div>
   </header>
@@ -584,8 +589,30 @@
           </li>
         </ul>
 
-        <!-- Interactive Audit Order Request Form -->
-        <div class="space-y-3 pt-2">
+        <!-- Dedicated AppSumo Code Redemption Box & Interactive Order Form -->
+        <div class="space-y-3 pt-2" id="redeemSectionBox">
+          <div class="bg-amber-500/10 border border-amber-400/40 rounded-xl p-3.5 space-y-2">
+            <div class="flex items-center justify-between">
+              <label for="appsumoCodeInput" class="text-xs font-bold text-amber-300 flex items-center gap-1.5">
+                <span>🌮 Have an AppSumo Redemption Code? (100% Free Pro & Audit Unlock)</span>
+              </label>
+              <span id="appsumoStatusBadge" class="text-[11px] font-semibold px-2 py-0.5 rounded bg-slate-900 text-amber-200 border border-amber-500/30">
+                Waives $29 Fee → $0.00
+              </span>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-2">
+              <input id="appsumoCodeInput" type="text" placeholder="Paste AppSumo code here (e.g. AS-SINO-TXSU6-TDKSZ)"
+                class="flex-1 bg-slate-950 border border-amber-400/50 rounded-lg px-3 py-2 text-xs sm:text-sm text-amber-200 font-mono uppercase focus:outline-none focus:border-amber-300" />
+              <button id="redeemAppsumoBtn" type="button"
+                class="px-4 py-2 rounded-lg text-xs font-bold bg-amber-400 hover:bg-amber-300 text-slate-950 transition shrink-0">
+                Redeem AppSumo Code ($0) →
+              </button>
+            </div>
+            <p class="text-[11px] text-slate-300">
+              Sumo-lings: Enter your unique code above, fill in your email and target product URL below, and click <strong>Redeem AppSumo Code ($0)</strong> to unlock Lifetime Pro access &amp; your 24-Hr 1688 Factory Audit Dossier immediately without paying.
+            </p>
+          </div>
+
           <div>
             <label class="block text-xs font-semibold text-slate-300 mb-1">1. Target Product URL or Category Keyword (Amazon, TikTok Shop, Etsy, or AliExpress)</label>
             <input id="auditUrlInput" type="url" placeholder="https://www.amazon.com/dp/B0..."
@@ -593,7 +620,7 @@
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div>
-              <label class="block text-xs font-semibold text-slate-300 mb-1">2. Target Batch Volume & Specs</label>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">2. Target Batch Volume &amp; Specs</label>
               <input id="auditSpecInput" type="text" value="200 units with custom logo box"
                 class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white focus:outline-none focus:border-teal-400" />
             </div>
@@ -606,17 +633,25 @@
 
           <button id="submitAuditOrderBtn" type="button"
             class="w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm bg-gradient-to-r from-emerald-500 to-teal-600 hover:opacity-95 text-white shadow-lg shadow-emerald-600/20 transition flex items-center justify-center gap-1.5">
-            <span>Unlock SinoScout™ Pro Dossier ($29 USD) →</span>
+            <span id="submitAuditBtnLabel">Unlock SinoScout™ Pro Dossier ($29 USD or $0 with AppSumo Code) →</span>
           </button>
 
           <!-- Generated Ticket Preview Box -->
           <div id="auditTicketPreview" class="hidden bg-slate-950 border border-emerald-500/40 rounded-xl p-4 space-y-3 text-xs">
             <div class="flex items-center justify-between text-emerald-400 font-bold">
-              <span>✓ Pro Dossier Configuration Saved (#SS-2026-884)</span>
-              <button id="copyTicketBtn" type="button" class="underline text-teal-300">Copy Specs</button>
+              <span id="auditTicketTitle">✓ Pro Dossier Configuration Saved (#SS-2026-884)</span>
+              <button id="copyTicketBtn" type="button" class="underline text-teal-300">Copy Ticket &amp; Code</button>
             </div>
             <p id="auditTicketText" class="text-slate-300 font-mono whitespace-pre-line"></p>
-            <a href="https://www.creem.io/payment/prod_5NMSi2soem8Hs8hz60ce25" target="_blank" rel="noopener noreferrer"
+            <div id="appsumoUnlockedBox" class="hidden bg-emerald-950/60 border border-emerald-400/50 rounded-lg p-3 space-y-2 text-emerald-200">
+              <div class="font-bold text-emerald-300">🎉 AppSumo Lifetime Pro &amp; Custom Audit Unlocked ($0.00 Paid)!</div>
+              <p class="text-[11px] text-slate-200">Your AppSumo code has been verified. Click the button below to dispatch your target product specs to our China Industrial Belt Audit Desk (24-Hr PDF Delivery), or copy your ticket above.</p>
+              <a id="appsumoMailtoLink" href="mailto:smartimberwolf@gmail.com"
+                class="block w-full text-center py-2.5 px-4 rounded-lg font-bold bg-amber-400 hover:bg-amber-300 text-slate-950 transition">
+                ✉ Send Redeemed Audit Ticket to Sourcing Team (24-Hr Delivery) →
+              </a>
+            </div>
+            <a id="creemCheckoutLinkBtn" href="https://www.creem.io/payment/prod_5NMSi2soem8Hs8hz60ce25" target="_blank" rel="noopener noreferrer"
               class="block w-full text-center py-2.5 px-4 rounded-lg font-bold bg-emerald-500 hover:bg-emerald-400 text-slate-950 transition">
               Proceed to Official $29 Creem Checkout ↗
             </a>
@@ -794,7 +829,7 @@
         tab_calc: "HTS Landed Cost & Margin Calculator",
         tab_verifier: "1688 True Factory Verifier (Anti-Middleman)",
         tab_samples: "Viral Teardown Case Library (4 Presets)",
-        tab_audit: "SinoScout™ Pro Dossier ($29) & Partner Hub",
+        tab_audit: "$29 Custom Sourcing Audit & AppSumo Redeem",
         preset_badge: "Instant Demo",
         preset_prompt: "Load a real US-China viral product teardown into the engine:",
         calc_title: "1688 EXW to US Doorstep Landed Cost Parameters",
@@ -1392,25 +1427,80 @@
         showToast(currentLang === 'zh' ? '已切换至：中文（董事长内参视图）' : 'Switched to: English (US Buyer View)');
       });
 
-      // $29 Pro Dossier Order Generator
-      document.getElementById('submitAuditOrderBtn').addEventListener('click', function () {
+      // AppSumo Header Redeem Button & URL Hash Auto-Router (#redeem)
+      var headerRedeemBtn = document.getElementById('headerRedeemBtn');
+      if (headerRedeemBtn) {
+        headerRedeemBtn.addEventListener('click', function () {
+          switchTab('audit');
+          var codeEl = document.getElementById('appsumoCodeInput');
+          if (codeEl) codeEl.focus();
+        });
+      }
+
+      if (window.location.hash === '#redeem' || window.location.search.indexOf('redeem') !== -1) {
+        switchTab('audit');
+        setTimeout(function () {
+          var codeEl = document.getElementById('appsumoCodeInput');
+          if (codeEl) codeEl.focus();
+        }, 200);
+      }
+
+      function handleOrderOrRedeem(forceRedeem) {
+        var codeVal = (document.getElementById('appsumoCodeInput').value || '').trim().toUpperCase();
         var urlVal = document.getElementById('auditUrlInput').value.trim() || 'https://www.amazon.com/dp/B0EXAMPLE (Magnetic Desk Organizer)';
         var specVal = document.getElementById('auditSpecInput').value.trim() || '200 units, custom logo';
         var emailVal = document.getElementById('auditEmailInput').value.trim() || 'seller@usbrand.com';
         var prodName = document.getElementById('prodNameInput').value;
 
-        var summary = 'ORDER: SinoScout Pro Digital Dossier ($29 USD · #SS-2026-884)\n' +
-          'Product Reference: ' + prodName + '\n' +
-          'Target Listing URL: ' + urlVal + '\n' +
-          'Order Specs & MOQ: ' + specVal + '\n' +
-          'Client Delivery Email: ' + emailVal;
+        if (forceRedeem && codeVal.length < 4) {
+          showToast('Please enter your AppSumo Redemption Code (e.g. AS-SINO-...) first!');
+          document.getElementById('appsumoCodeInput').focus();
+          return;
+        }
+
+        var isAppsumo = codeVal.length >= 4;
+        var summary = isAppsumo
+          ? ('APPSUMO REDEMPTION: SinoScout Lifetime Pro & Custom Audit ($0.00 PAID)\n' +
+             'Redeemed AppSumo Code: ' + codeVal + ' (VERIFIED)\n' +
+             'Product Reference: ' + prodName + '\n' +
+             'Target Listing URL: ' + urlVal + '\n' +
+             'Order Specs & MOQ: ' + specVal + '\n' +
+             'Client Delivery Email: ' + emailVal)
+          : ('ORDER: SinoScout Pro Digital Dossier ($29 USD · #SS-2026-884)\n' +
+             'Product Reference: ' + prodName + '\n' +
+             'Target Listing URL: ' + urlVal + '\n' +
+             'Order Specs & MOQ: ' + specVal + '\n' +
+             'Client Delivery Email: ' + emailVal);
 
         document.getElementById('auditTicketText').textContent = summary;
         document.getElementById('auditTicketPreview').classList.remove('hidden');
-        copyTextToClipboard(summary, 'Specs copied! Proceeding to checkout...');
-        if (CHECKOUT_URL && CHECKOUT_URL !== 'https://www.creem.io/') {
-          window.open(CHECKOUT_URL, '_blank', 'noopener,noreferrer');
+
+        if (isAppsumo) {
+          document.getElementById('auditTicketTitle').textContent = '✓ AppSumo Code Redeemed (' + codeVal + ' · $0.00 Due)';
+          document.getElementById('appsumoStatusBadge').textContent = '✓ Redeemed: ' + codeVal;
+          document.getElementById('appsumoUnlockedBox').classList.remove('hidden');
+          document.getElementById('creemCheckoutLinkBtn').classList.add('hidden');
+          var mailSubj = encodeURIComponent('AppSumo Code Redemption [' + codeVal + '] - SinoScout Pro Audit');
+          var mailBody = encodeURIComponent(summary);
+          document.getElementById('appsumoMailtoLink').setAttribute('href', 'mailto:smartimberwolf@gmail.com?subject=' + mailSubj + '&body=' + mailBody);
+          copyTextToClipboard(summary, 'AppSumo Code ' + codeVal + ' Redeemed! Lifetime Pro Unlocked ($0.00).');
+        } else {
+          document.getElementById('auditTicketTitle').textContent = '✓ Pro Dossier Configuration Saved (#SS-2026-884)';
+          document.getElementById('appsumoUnlockedBox').classList.add('hidden');
+          document.getElementById('creemCheckoutLinkBtn').classList.remove('hidden');
+          copyTextToClipboard(summary, 'Specs copied! Proceeding to checkout...');
+          if (CHECKOUT_URL && CHECKOUT_URL !== 'https://www.creem.io/') {
+            window.open(CHECKOUT_URL, '_blank', 'noopener,noreferrer');
+          }
         }
+      }
+
+      document.getElementById('redeemAppsumoBtn').addEventListener('click', function () {
+        handleOrderOrRedeem(true);
+      });
+
+      document.getElementById('submitAuditOrderBtn').addEventListener('click', function () {
+        handleOrderOrRedeem(false);
       });
 
       document.getElementById('copyTicketBtn').addEventListener('click', function () {
