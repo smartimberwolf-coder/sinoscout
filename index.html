@@ -64,7 +64,7 @@
           <div class="flex items-center gap-2">
             <h1 class="font-bold text-base sm:text-lg text-white tracking-tight">SinoScout™</h1>
             <span class="text-[11px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-teal-500/15 text-teal-300 border border-teal-500/30" data-i18n="badge_v1">
-              US-China Sourcing SaaS V1.3 · All-Category
+              US-China Sourcing SaaS V3.2 · By Nexus China Biz
             </span>
           </div>
           <p class="text-xs text-slate-400" data-i18n="subtitle">
@@ -161,7 +161,7 @@
             </button>
           </div>
 
-          <!-- Product & Pricing Row (V1.3 All-Category Auto-Translator) -->
+          <!-- Product & Pricing Row (V3.2 All-Category Auto-Translator) -->
           <div class="space-y-3">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
@@ -719,9 +719,9 @@
     <div class="max-w-7xl mx-auto space-y-4 text-xs text-slate-400">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pb-4 border-b border-slate-800/80">
         <div>
-          <div class="font-bold text-slate-200 mb-1">About SinoScout™ SaaS</div>
+          <div class="font-bold text-slate-200 mb-1">About SinoScout™ (Operated by Nexus China Biz)</div>
           <p class="text-slate-500 leading-relaxed">
-            SinoScout™ is an interactive supply chain intelligence web application providing USITC HTS tariff simulations, 1688 manufacturer authenticity scoring, and digital sourcing data reports for e-commerce brands.
+            SinoScout™ (operated by Nexus China Biz · nexuschinabiz.com) is an interactive supply chain intelligence web application providing USITC HTS tariff simulations, 1688 manufacturer authenticity scoring, and digital sourcing data reports for e-commerce brands.
           </p>
         </div>
         <div>
@@ -738,7 +738,7 @@
         </div>
       </div>
       <div class="flex flex-wrap items-center justify-between gap-2 text-slate-500">
-        <div>© 2026 SinoScout™ V1.3 — US-China Cross-Border Supply Chain Intelligence</div>
+        <div>© 2026 SinoScout™ V3.2 (Operated by Nexus China Biz · nexuschinabiz.com) — US-China Cross-Border Supply Chain Intelligence</div>
         <div><a href="/terms.html" class="text-teal-400 hover:underline">Terms of Service</a> · <a href="/privacy.html" class="text-teal-400 hover:underline">Privacy Policy</a> · <a href="/terms.html#refund" class="text-teal-400 hover:underline">14-Day Refund Guarantee</a></div>
       </div>
     </div>
@@ -828,7 +828,7 @@
 
     var i18nDict = {
       en: {
-        badge_v1: "US-China Sourcing SaaS V1.3 · All-Category",
+        badge_v1: "US-China Sourcing SaaS V3.2 · By Nexus China Biz",
         subtitle: "1688 True Factory Verifier + USITC HTS Landed Cost & Margin Simulator",
         fx_label: "USD/CNH:",
         header_cta: "Unlock $29 Pro Dossier →",
@@ -879,7 +879,7 @@
         aff_title: "Recommended Cross-Border Fulfillment & Payment Stack"
       },
       zh: {
-        badge_v1: "中美供应链套利引擎 V1.3 · 全品类智能版",
+        badge_v1: "中美供应链套利引擎 V3.2 · Nexus China Biz 出品",
         subtitle: "1688 真源头工厂鉴别算法 + 美国 USITC HTS 关税到岸毛利测算系统",
         fx_label: "实时汇率:",
         header_cta: "解锁 $29 Pro 寻源数据包 →",
@@ -1127,7 +1127,7 @@
       }
     }
 
-    // V1.3 All-Category English-to-1688 Industrial Belt & Keyword Auto-Translator
+    // V3.2 All-Category English-to-1688 Industrial Belt & Keyword Auto-Translator
     var categoryAutoRules = [
       { keys: ['phone case', 'magsafe', 'iphone', 'earbud', 'airpod', 'charger', 'power bank', 'cable', 'screen protector'], cn: '磁吸手机壳 3C数码配件 源头工厂', belt: 'Shenzhen Huaqiangbei / Dongguan, Guangdong (深圳东莞3C数码产业带)', hts: '0.128' },
       { keys: ['tumbler', 'water bottle', 'thermos', 'flask', 'mug', 'cup', 'stanley', 'insulated'], cn: '不锈钢保温杯 车载冰霸杯 源头工厂', belt: 'Yongkang / Wuyi, Zhejiang (浙江永康五金保温杯产业带)', hts: '0.147' },
@@ -1440,14 +1440,10 @@
         var emailVal = document.getElementById('auditEmailInput').value.trim() || 'founder@yourbrand.com';
         var prodName = document.getElementById('prodNameInput').value;
 
-        var summary = 'ORDER: SinoScout Pro Digital Dossier (9 USD · #SS-2026-884)
-' +
-          'Product Reference: ' + prodName + '
-' +
-          'Target Listing URL: ' + urlVal + '
-' +
-          'Order Specs & MOQ: ' + specVal + '
-' +
+        var summary = 'ORDER: SinoScout Pro Digital Dossier ($29 USD · #SS-2026-884)\n' +
+          'Product Reference: ' + prodName + '\n' +
+          'Target Listing URL: ' + urlVal + '\n' +
+          'Order Specs & MOQ: ' + specVal + '\n' +
           'Client Delivery Email: ' + emailVal;
 
         document.getElementById('auditTicketText').textContent = summary;
