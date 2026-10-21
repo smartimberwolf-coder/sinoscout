@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sinoscout.vercel.app/sitemap.xml
+Sitemap: https://www.nexuschinabiz.com/sitemap.xml
