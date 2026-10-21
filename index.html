@@ -87,10 +87,7 @@
           中文 (董事长视图)
         </button>
 
-        <button id="headerRedeemBtn" type="button"
-          class="px-3 py-1.5 rounded-lg text-xs font-bold border border-amber-400/60 bg-amber-500/15 text-amber-300 hover:bg-amber-500/25 transition">
-          
-        </button>
+        
 
         <button id="headerAuditBtn" type="button"
           class="px-3.5 py-1.5 rounded-lg text-xs font-bold bg-gradient-to-r from-emerald-500 to-teal-600 text-white hover:opacity-95 transition shadow-md shadow-teal-600/20"
@@ -1418,12 +1415,23 @@
         loadPreset(0);
       });
 
-      // CTA jumps to Audit tab
+      // CTA jumps to Audit tab and scrolls to checkout button (or opens checkout directly if already on Audit tab)
       document.getElementById('headerAuditBtn').addEventListener('click', function () {
-        switchTab('audit');
+        var auditView = document.getElementById('view-audit');
+        if (auditView && !auditView.classList.contains('hidden')) {
+          handleOrder();
+        } else {
+          switchTab('audit');
+          var btn = document.getElementById('submitAuditOrderBtn');
+          if (btn) btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          showToast(currentLang === 'zh' ? '已为您打开 $29 结账台，再次点击绿色按钮即可跳转 Creem 付款！' : 'Switched to $29 Pro Dossier Checkout — click the green Order button below!');
+        }
       });
       document.getElementById('calcToAuditBtn').addEventListener('click', function () {
         switchTab('audit');
+        var btn = document.getElementById('submitAuditOrderBtn');
+        if (btn) btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        showToast(currentLang === 'zh' ? '请确认下方需求后点击绿色按钮跳转 Creem 支付 ($29)' : 'Confirm your product URL below and click Order ($29 USD) to checkout!');
       });
 
       // Language switcher
@@ -1433,7 +1441,7 @@
         showToast(currentLang === 'zh' ? '已切换至：中文（董事长内参视图）' : 'Switched to: English (US Buyer View)');
       });
 
-      // Direct Creem $29 Checkout Order Handler
+      // Direct Creem $29 Checkout Order Handler (Synchronous popup + fallback redirect so browsers never block it)
       function handleOrder() {
         var urlVal = document.getElementById('auditUrlInput').value.trim() || 'https://www.amazon.com/dp/B0EXAMPLE (Magnetic Desk Organizer)';
         var specVal = document.getElementById('auditSpecInput').value.trim() || '200 units with custom logo box';
@@ -1448,10 +1456,13 @@
 
         document.getElementById('auditTicketText').textContent = summary;
         document.getElementById('auditTicketPreview').classList.remove('hidden');
-        copyTextToClipboard(summary, 'Order specs saved! Redirecting to secure checkout...');
-        setTimeout(function() {
-          window.open(CHECKOUT_URL, '_blank', 'noopener,noreferrer');
-        }, 500);
+
+        // Open Creem Checkout synchronously inside the user click event so Chrome never blocks it
+        var win = window.open(CHECKOUT_URL, '_blank');
+        if (!win) {
+          window.location.href = CHECKOUT_URL;
+        }
+        copyTextToClipboard(summary, 'Opening Creem $29 Checkout...');
       }
 
       var submitBtn = document.getElementById('submitAuditOrderBtn');
