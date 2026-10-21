@@ -588,12 +588,28 @@
 
         <!-- Dedicated $29 Custom Sourcing Audit Order Form -->
         <div class="space-y-3 pt-2" id="redeemSectionBox">
-          
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">1. Target Product URL or Name (Amazon, TikTok Shop, Etsy, or AliExpress)</label>
+            <input id="auditUrlInput" type="url" placeholder="https://www.amazon.com/dp/B0... (optional — or leave blank for instant checkout)"
+              class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white focus:outline-none focus:border-teal-400" />
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">2. Target Order Quantity &amp; Customization</label>
+              <input id="auditSpecInput" type="text" value="200 units with custom logo box"
+                class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white focus:outline-none focus:border-teal-400" />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">3. Your Email (for Dossier Delivery)</label>
+              <input id="auditEmailInput" type="email" placeholder="founder@yourbrand.com"
+                class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white focus:outline-none focus:border-teal-400" />
+            </div>
+          </div>
 
-          <button id="submitAuditOrderBtn" type="button"
-            class="w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm bg-gradient-to-r from-emerald-500 to-teal-600 hover:opacity-95 text-white shadow-lg shadow-emerald-600/20 transition flex items-center justify-center gap-1.5">
+          <a id="submitAuditOrderBtn" href="https://www.creem.io/payment/prod_5NMSi2soem8Hs8hz60ce25" target="_blank" rel="noopener noreferrer"
+            class="w-full py-3.5 px-4 rounded-xl font-bold text-xs sm:text-sm bg-gradient-to-r from-emerald-500 to-teal-600 hover:opacity-95 text-white shadow-lg shadow-emerald-600/20 transition flex items-center justify-center gap-1.5 cursor-pointer text-center no-underline">
             <span id="submitAuditBtnLabel">Order SinoScout™ Pro Sourcing Dossier ($29 USD) →</span>
-          </button>
+          </a>
 
           <!-- Generated Ticket Preview Box -->
           <div id="auditTicketPreview" class="hidden bg-slate-950 border border-emerald-500/40 rounded-xl p-4 space-y-3 text-xs">
@@ -602,7 +618,8 @@
               <button id="copyTicketBtn" type="button" class="underline text-teal-300">Copy Order Ticket</button>
             </div>
             <p id="auditTicketText" class="text-slate-300 font-mono whitespace-pre-line"></p>
-            
+          </div>
+        </div>
       </div>
 
       <!-- Right: B2B Affiliate & Fulfillment Ecosystem (Layer 3 Moat) -->
@@ -1441,28 +1458,35 @@
         showToast(currentLang === 'zh' ? '已切换至：中文（董事长内参视图）' : 'Switched to: English (US Buyer View)');
       });
 
-      // Direct Creem $29 Checkout Order Handler (Synchronous popup + fallback redirect so browsers never block it)
-      function handleOrder() {
-        var urlVal = document.getElementById('auditUrlInput').value.trim() || 'https://www.amazon.com/dp/B0EXAMPLE (Magnetic Desk Organizer)';
-        var specVal = document.getElementById('auditSpecInput').value.trim() || '200 units with custom logo box';
-        var emailVal = document.getElementById('auditEmailInput').value.trim() || 'founder@yourbrand.com';
-        var prodName = document.getElementById('prodNameInput').value;
+      // Direct Creem $29 Checkout Order Handler
+      function handleOrder(e) {
+        try {
+          var uEl = document.getElementById('auditUrlInput');
+          var sEl = document.getElementById('auditSpecInput');
+          var eEl = document.getElementById('auditEmailInput');
+          var pEl = document.getElementById('prodNameInput');
+          var urlVal = (uEl && uEl.value.trim()) || 'https://www.amazon.com/dp/B0EXAMPLE (Magnetic Desk Organizer)';
+          var specVal = (sEl && sEl.value.trim()) || '200 units with custom logo box';
+          var emailVal = (eEl && eEl.value.trim()) || 'founder@yourbrand.com';
+          var prodName = (pEl && pEl.value) || 'Custom 1688 SKU';
 
-        var summary = 'ORDER: SinoScout Pro Digital Dossier ($29 USD · #SS-2026-884)\n' +
-          'Product Reference: ' + prodName + '\n' +
-          'Target Listing URL: ' + urlVal + '\n' +
-          'Order Specs & MOQ: ' + specVal + '\n' +
-          'Client Delivery Email: ' + emailVal;
+          var summary = 'ORDER: SinoScout Pro Digital Dossier ($29 USD · #SS-2026-884)\n' +
+            'Product Reference: ' + prodName + '\n' +
+            'Target Listing URL: ' + urlVal + '\n' +
+            'Order Specs & MOQ: ' + specVal + '\n' +
+            'Client Delivery Email: ' + emailVal;
 
-        document.getElementById('auditTicketText').textContent = summary;
-        document.getElementById('auditTicketPreview').classList.remove('hidden');
-
-        // Open Creem Checkout synchronously inside the user click event so Chrome never blocks it
-        var win = window.open(CHECKOUT_URL, '_blank');
-        if (!win) {
-          window.location.href = CHECKOUT_URL;
+          var tText = document.getElementById('auditTicketText');
+          var tPrev = document.getElementById('auditTicketPreview');
+          if (tText) tText.textContent = summary;
+          if (tPrev) tPrev.classList.remove('hidden');
+          copyTextToClipboard(summary, 'Opening Creem $29 Checkout...');
+        } catch (err) {}
+        // If called from header button (not native <a> click), open CHECKOUT_URL directly
+        if (!e || !e.currentTarget || e.currentTarget.tagName !== 'A') {
+          var win = window.open(CHECKOUT_URL, '_blank');
+          if (!win) window.location.href = CHECKOUT_URL;
         }
-        copyTextToClipboard(summary, 'Opening Creem $29 Checkout...');
       }
 
       var submitBtn = document.getElementById('submitAuditOrderBtn');
