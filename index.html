@@ -3,104 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SinoScout™ — 1688 Factory Verifier & US HTS Landed Cost SaaS Engine</title>
+  <title>Free 1688 Factory Verifier &amp; US HTS Landed Cost Calculator (2026) | SinoScout™</title>
+  <meta name="description" content="Instant 1688 true factory verifier (filter out trading middlemen in 10s) + USITC HTS &amp; China Section 301 landed cost profit calculator for Amazon FBA &amp; TikTok Shop US." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.nexuschinabiz.com/" />
+  <meta property="og:title" content="Free 1688 Factory Verifier &amp; US HTS Landed Cost Calculator | SinoScout™" />
+  <meta property="og:description" content="Auto-translate any English product into Chinese 1688 industrial belt keywords, score factory licenses, and calculate exact US Section 301 landed margins." />
+  <meta property="og:url" content="https://www.nexuschinabiz.com/" />
+  <meta property="og:type" content="website" />
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "SinoScout™ — 1688 True Factory Verifier & USITC HTS Landed Cost Calculator",
+  "url": "https://www.nexuschinabiz.com/",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "All",
+  "description": "Free interactive 1688 factory authenticity verifier (0–100 score) and USITC HTS + Section 301 landed cost margin simulator for Amazon FBA, TikTok Shop US, and Shopify sellers.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+  </script>
   <style>
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background-color: #0b1120;
-      color: #f1f5f9;
-    }
-    .glass-card {
-      background: rgba(15, 23, 42, 0.85);
-      border: 1px solid rgba(51, 65, 85, 0.7);
-      backdrop-filter: blur(12px);
-    }
-    .tab-btn-active {
-      background: linear-gradient(135deg, #2563eb 0%, #0d9488 100%);
-      color: #ffffff;
-      border-color: transparent;
-      box-shadow: 0 4px 15px rgba(37, 99, 235, 0.35);
-    }
-    input[type="range"] {
-      accent-color: #14b8a6;
-    }
-    .custom-scroll::-webkit-scrollbar {
-      width: 6px;
-      height: 6px;
-    }
-    .custom-scroll::-webkit-scrollbar-track {
-      background: #0f172a;
-    }
-    .custom-scroll::-webkit-scrollbar-thumb {
-      background: #334155;
-      border-radius: 3px;
-    }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background-color: #0b1120; color: #f1f5f9; }
+    .glass-card { background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(51, 65, 85, 0.7); backdrop-filter: blur(12px); }
+    .tab-btn-active { background: linear-gradient(135deg, #2563eb 0%, #0d9488 100%); color: #ffffff; border-color: transparent; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.35); }
+    .custom-scroll::-webkit-scrollbar { width: 6px; height: 6px; }
+    .custom-scroll::-webkit-scrollbar-track { background: #0f172a; }
+    .custom-scroll::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
   </style>
 </head>
 <body class="min-h-screen flex flex-col selection:bg-teal-500 selection:text-white">
-
-  <!-- Toast Notification -->
   <div id="toastContainer" class="fixed bottom-5 right-5 z-50 hidden transition-all duration-300">
     <div class="bg-emerald-600 text-white px-4 py-3 rounded-xl shadow-2xl border border-emerald-400/40 flex items-center gap-3 text-sm font-medium">
-      <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-      </svg>
       <span id="toastMessage">Copied to clipboard!</span>
     </div>
   </div>
 
-  <!-- Top Header -->
   <header class="sticky top-0 z-40 border-b border-slate-800 bg-slate-950/90 backdrop-blur-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
       <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-teal-500 flex items-center justify-center shadow-lg shadow-blue-500/20 font-extrabold text-lg tracking-tighter text-white">
-          SS
-        </div>
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-teal-500 flex items-center justify-center shadow-lg shadow-blue-500/20 font-extrabold text-lg tracking-tighter text-white">SS</div>
         <div>
           <div class="flex items-center gap-2">
-            <h1 class="font-bold text-base sm:text-lg text-white tracking-tight">SinoScout™</h1>
-            <span class="text-[11px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-teal-500/15 text-teal-300 border border-teal-500/30" data-i18n="badge_v1">
-              US-China Sourcing SaaS V3.2 · By Nexus China Biz
-            </span>
+            <span class="font-bold text-base sm:text-lg text-white tracking-tight">SinoScout™</span>
+            <span class="text-[11px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-teal-500/15 text-teal-300 border border-teal-500/30" data-i18n="badge_v1">US-China Sourcing SaaS V3.5 · By Nexus China Biz</span>
           </div>
-          <p class="text-xs text-slate-400" data-i18n="subtitle">
-            1688 True Factory Verifier + USITC HTS Landed Cost & Margin Simulator
-          </p>
+          <p class="text-xs text-slate-400" data-i18n="subtitle">1688 True Factory Verifier + USITC HTS Landed Cost &amp; Margin Simulator</p>
         </div>
       </div>
 
-      <!-- Right Controls: Live Exchange Rate + Language Switcher + CTA -->
       <div class="flex items-center gap-2 sm:gap-3 flex-wrap">
         <div class="flex items-center gap-1.5 bg-slate-900 border border-slate-700/80 rounded-lg px-2.5 py-1.5 text-xs">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
           <span class="text-slate-400 font-medium" data-i18n="fx_label">USD/CNH:</span>
-          <input id="fxRateInput" type="number" step="0.01" min="5.0" max="9.0" value="6.69"
-            class="w-14 bg-slate-800 text-teal-300 font-bold px-1.5 py-0.5 rounded border border-slate-700 focus:outline-none focus:border-teal-400 text-right" />
+          <input id="fxRateInput" type="number" step="0.01" min="5.0" max="9.0" value="6.67" class="w-14 bg-slate-800 text-teal-300 font-bold px-1.5 py-0.5 rounded border border-slate-700 focus:outline-none focus:border-teal-400 text-right" />
         </div>
-
-        <button id="langToggleBtn" type="button"
-          class="px-3 py-1.5 rounded-lg text-xs font-semibold border border-amber-500/40 bg-amber-500/10 text-amber-300 hover:bg-amber-500/20 transition">
-          中文 (董事长视图)
-        </button>
-
-        
-
-        <button id="headerAuditBtn" type="button"
-          class="px-3.5 py-1.5 rounded-lg text-xs font-bold bg-gradient-to-r from-emerald-500 to-teal-600 text-white hover:opacity-95 transition shadow-md shadow-teal-600/20"
-          data-i18n="header_cta">
-          Unlock $29 Pro Dossier →
-        </button>
+        <button id="langToggleBtn" type="button" class="px-3 py-1.5 rounded-lg text-xs font-semibold border border-amber-500/40 bg-amber-500/10 text-amber-300 hover:bg-amber-500/20 transition">中文 (董事长视图)</button>
+        <a href="https://www.creem.io/payment/prod_5NMSi2soem8Hs8hz60ce25" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-lg text-xs font-bold bg-gradient-to-r from-emerald-500 to-teal-600 text-white hover:opacity-95 transition shadow-md shadow-teal-600/20" data-i18n="header_cta">Unlock $29 Pro Dossier →</a>
       </div>
     </div>
 
-    <!-- Navigation Tabs -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 pb-2.5 pt-1 flex items-center gap-2 overflow-x-auto custom-scroll">
       <button type="button" data-tab="calculator" class="nav-tab-btn tab-btn-active px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold border border-slate-800 whitespace-nowrap transition flex items-center gap-2">
-        <span>1.</span> <span data-i18n="tab_calc">HTS Landed Cost & Margin Calculator</span>
+        <span>1.</span> <span data-i18n="tab_calc">HTS Landed Cost &amp; Margin Calculator</span>
       </button>
       <button type="button" data-tab="verifier" class="nav-tab-btn px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold border border-slate-800 bg-slate-900/70 text-slate-300 hover:text-white whitespace-nowrap transition flex items-center gap-2">
         <span>2.</span> <span data-i18n="tab_verifier">1688 True Factory Verifier (Anti-Middleman)</span>
@@ -109,163 +82,101 @@
         <span>3.</span> <span data-i18n="tab_samples">Viral Teardown Case Library (4 Presets)</span>
       </button>
       <button type="button" data-tab="audit" class="nav-tab-btn px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold border border-slate-800 bg-slate-900/70 text-slate-300 hover:text-white whitespace-nowrap transition flex items-center gap-2">
-        <span>4.</span> <span data-i18n="tab_audit">$29 Custom Sourcing Audit & Partner Hub</span>
+        <span>4.</span> <span data-i18n="tab_audit">$29 Custom Sourcing Audit &amp; Partner Hub</span>
       </button>
     </div>
   </header>
 
-  <!-- Main Workspace -->
-  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-6">
-
-    <!-- Quick Preset Bar -->
-    <div class="mb-6 glass-card rounded-xl p-3.5 flex flex-wrap items-center justify-between gap-3">
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-6 space-y-8">
+    <div class="glass-card rounded-xl p-3.5 flex flex-wrap items-center justify-between gap-3">
       <div class="flex items-center gap-2 text-xs sm:text-sm">
         <span class="px-2 py-0.5 rounded bg-blue-500/20 text-blue-300 font-semibold text-xs" data-i18n="preset_badge">Instant Demo</span>
         <span class="text-slate-300 font-medium" data-i18n="preset_prompt">Load a real US-China viral product teardown into the engine:</span>
       </div>
       <div class="flex flex-wrap items-center gap-2">
-        <button type="button" data-preset="0" class="preset-load-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-blue-600/30 border border-slate-700 hover:border-blue-500 text-slate-200 transition">
-          Magnetic Desk Organizer (¥24 → $36)
-        </button>
-        <button type="button" data-preset="1" class="preset-load-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-blue-600/30 border border-slate-700 hover:border-blue-500 text-slate-200 transition">
-          Pet Grooming Vacuum Kit (¥145 → $89)
-        </button>
-        <button type="button" data-preset="2" class="preset-load-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-blue-600/30 border border-slate-700 hover:border-blue-500 text-slate-200 transition">
-          Acrylic LED Neon Sign (¥38 → $49)
-        </button>
-        <button type="button" data-preset="3" class="preset-load-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-blue-600/30 border border-slate-700 hover:border-blue-500 text-slate-200 transition">
-          Portable Espresso Maker (¥88 → $64)
-        </button>
+        <button type="button" data-preset="0" class="preset-load-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-blue-600/30 border border-slate-700 hover:border-blue-500 text-slate-200 transition">Magnetic Desk Organizer (¥24 → $36)</button>
+        <button type="button" data-preset="1" class="preset-load-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-blue-600/30 border border-slate-700 hover:border-blue-500 text-slate-200 transition">Smart Ring BLE (¥85 → $79)</button>
+        <button type="button" data-preset="2" class="preset-load-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-blue-600/30 border border-slate-700 hover:border-blue-500 text-slate-200 transition">MagSafe 3-in-1 Charger (¥32 → $29.99)</button>
+        <button type="button" data-preset="3" class="preset-load-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-blue-600/30 border border-slate-700 hover:border-blue-500 text-slate-200 transition">Portable Espresso Maker (¥88 → $64)</button>
       </div>
     </div>
 
-    <!-- ==================== TAB 1: HTS LANDED COST & MARGIN CALCULATOR ==================== -->
+    <!-- TAB 1: CALCULATOR -->
     <section id="view-calculator" class="tab-view grid grid-cols-1 lg:grid-cols-12 gap-6">
-      <!-- Left Column: Inputs (7 cols) -->
       <div class="lg:col-span-7 space-y-5">
         <div class="glass-card rounded-2xl p-5 space-y-5">
           <div class="flex items-center justify-between border-b border-slate-800 pb-3">
             <div>
-              <h2 class="text-base sm:text-lg font-bold text-white" data-i18n="calc_title">
-                1688 EXW to US Doorstep Landed Cost Parameters
-              </h2>
-              <p class="text-xs text-slate-400" data-i18n="calc_desc">
-                Compare 1688 direct factory sourcing against AliExpress middlemen and US POD fulfillment.
-              </p>
+              <h1 class="text-base sm:text-lg font-bold text-white" data-i18n="calc_title">1688 EXW to US Doorstep Landed Cost &amp; Factory Verifier</h1>
+              <p class="text-xs text-slate-400" data-i18n="calc_desc">Compare 1688 direct factory sourcing against AliExpress middlemen and US POD fulfillment.</p>
             </div>
-            <button id="resetCalcBtn" type="button" class="text-xs text-slate-400 hover:text-white underline" data-i18n="btn_reset">
-              Reset Defaults
-            </button>
+            <button id="resetCalcBtn" type="button" class="text-xs text-slate-400 hover:text-white underline" data-i18n="btn_reset">Reset Defaults</button>
           </div>
 
-          <!-- Product & Pricing Row (V3.2 All-Category Auto-Translator) -->
-          <div class="space-y-3">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <div class="flex items-center justify-between mb-1.5">
-                  <label class="block text-xs font-semibold text-slate-300" data-i18n="lbl_prod_name">Type ANY Product Name / SKU (English)</label>
-                  <span class="text-[11px] text-teal-400 font-medium" data-i18n="lbl_auto_sync">⚡ Auto-Translates to 1688</span>
-                </div>
-                <input id="prodNameInput" type="text" value="Magnetic Modular Desk Organizer"
-                  placeholder="e.g. Silicone Baby Bib, MagSafe Case, Yoga Mat, Tumbler..."
-                  class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-teal-400" />
-              </div>
-              <div>
-                <div class="flex items-center justify-between mb-1.5">
-                  <label class="block text-xs font-semibold text-slate-300" data-i18n="lbl_cn_kw">1688 Chinese Factory Keyword (Auto-Matched)</label>
-                  <button id="open1688SearchBtn" type="button" class="text-[11px] font-semibold text-amber-400 hover:text-amber-300 underline">
-                    Search on 1688.com ↗
-                  </button>
-                </div>
-                <div class="flex gap-2">
-                  <input id="cnKeywordInput" type="text" value="磁吸桌面收纳盒 源头工厂"
-                    class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-amber-300 font-medium focus:outline-none focus:border-teal-400" />
-                  <button id="copyKwBtn" type="button" class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-600 text-xs font-semibold text-teal-300 shrink-0" data-i18n="btn_copy">
-                    Copy
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Live Matched China Industrial Belt Strip -->
-            <div class="bg-slate-900/80 border border-slate-800 rounded-xl px-3.5 py-2 flex flex-wrap items-center justify-between gap-2 text-xs">
-              <div class="flex items-center gap-2">
-                <span class="px-2 py-0.5 rounded bg-teal-500/15 text-teal-300 font-semibold border border-teal-500/30" data-i18n="belt_tag">Matched Industrial Belt</span>
-                <span id="matchedBeltDisplay" class="text-slate-200 font-medium">Ningbo / Taizhou, Zhejiang (模具注塑与桌面收纳产业带)</span>
-              </div>
-              <div class="flex items-center gap-1.5 text-[11px] text-slate-400">
-                <span data-i18n="try_typing_lbl">Try typing:</span>
-                <button type="button" data-quick-kw="MagSafe Phone Case" class="quick-kw-chip px-2 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 transition">Phone Case</button>
-                <button type="button" data-quick-kw="40oz Stainless Tumbler" class="quick-kw-chip px-2 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 transition">Tumbler</button>
-                <button type="button" data-quick-kw="Silicone Baby Feeding Set" class="quick-kw-chip px-2 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 transition">Baby Silicone</button>
-                <button type="button" data-quick-kw="Red Light Therapy Wand" class="quick-kw-chip px-2 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 transition">Beauty Device</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Core Cost Sliders / Numbers -->
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-1">
-            <div class="bg-slate-900/90 p-3.5 rounded-xl border border-slate-800">
-              <label class="block text-xs text-slate-400 mb-1" data-i18n="lbl_1688_rmb">1688 Factory Price (¥ RMB)</label>
-              <input id="rmbPriceInput" type="number" step="0.5" min="1" value="24"
-                class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-1.5 text-base font-bold text-teal-300 focus:outline-none focus:border-teal-400" />
-              <div class="mt-1 text-[11px] text-slate-400">
-                ≈ <span id="usdFactoryEquiv" class="text-slate-200 font-semibold">$3.59</span> USD EXW
-              </div>
-            </div>
-
-            <div class="bg-slate-900/90 p-3.5 rounded-xl border border-slate-800">
-              <label class="block text-xs text-slate-400 mb-1" data-i18n="lbl_ali_usd">AliExpress / Middleman ($ USD)</label>
-              <input id="aliPriceInput" type="number" step="0.5" min="1" value="11.50"
-                class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-1.5 text-base font-bold text-rose-300 focus:outline-none focus:border-teal-400" />
-              <div class="mt-1 text-[11px] text-slate-400" data-i18n="lbl_ali_sub">
-                Typical English wholesale price
-              </div>
-            </div>
-
-            <div class="bg-slate-900/90 p-3.5 rounded-xl border border-slate-800">
-              <label class="block text-xs text-slate-400 mb-1" data-i18n="lbl_retail_usd">Target US Retail Price ($ USD)</label>
-              <input id="retailPriceInput" type="number" step="1" min="5" value="36.00"
-                class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-1.5 text-base font-bold text-emerald-300 focus:outline-none focus:border-teal-400" />
-              <div class="mt-1 text-[11px] text-slate-400" data-i18n="lbl_retail_sub">
-                TikTok Shop / Amazon / Etsy
-              </div>
-            </div>
-          </div>
-
-          <!-- HTS Tariff & Logistics Selectors -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label class="block text-xs font-semibold text-slate-300 mb-1.5" data-i18n="lbl_hts_cat">
-                USITC HTS Category (Base Duty + Section 301 China Tariff)
-              </label>
-              <div class="flex gap-2">
-                <select id="htsCategorySelect"
-                  class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white focus:outline-none focus:border-teal-400">
-                  <option value="0.114" data-code="3926.10.00">Home/Office Plastic, Acrylic & Silicone (HTS 3926.10) — 11.4%</option>
-                  <option value="0.289" data-code="8509.80.50">Small Home, Kitchen & Pet Appliances (HTS 8509.80) — 28.9%</option>
-                  <option value="0.102" data-code="9405.42.80">LED Lighting, Lamps & Neon Signs (HTS 9405.42) — 10.2%</option>
-                  <option value="0.195" data-code="4202.92.31">Backpacks, Handbags & Travel Organizers (HTS 4202.92) — 19.5%</option>
-                  <option value="0.075" data-code="9503.00.00">Toys, Pet Toys, Plush & Hobbies (HTS 9503.00) — 7.5%</option>
-                  <option value="0.128" data-code="3926.90.99">Phone Cases, MagSafe & 3C Accessories (HTS 3926.90) — 12.8%</option>
-                  <option value="0.147" data-code="7323.93.00">Stainless Tumblers, Flasks & Cookware (HTS 7323.93) — 14.7%</option>
-                  <option value="0.121" data-code="9506.91.00">Fitness, Yoga Mats & Camping Gear (HTS 9506.91) — 12.1%</option>
-                  <option value="0.275" data-code="9019.10.20">Beauty Devices, Massage Guns & Personal Care (HTS 9019.10) — 27.5%</option>
-                  <option value="0.185" data-code="7117.19.90">Fashion Jewelry, Watches & Hair Accessories (HTS 7117.19) — 18.5%</option>
-                  <option value="0.240" data-code="6109.10.00">Apparel, Activewear & Textiles (HTS 6109.10) — 24.0%</option>
-                  <option value="custom" data-code="CUSTOM">Custom HTS Duty Rate (Enter % on right) →</option>
-                </select>
-                <input id="customHtsRateInput" type="number" step="0.5" min="0" max="100" value="15.0" title="Custom Total Tariff %"
-                  class="hidden w-20 bg-slate-900 border border-teal-500 rounded-lg px-2 py-2 text-xs sm:text-sm font-bold text-teal-300 text-right focus:outline-none" />
+              <label class="block text-xs font-semibold text-slate-300 mb-1.5">Type ANY Product Name / SKU (English) <span class="text-teal-400">⚡ Auto-Translates</span></label>
+              <input id="prodNameInput" type="text" value="Magnetic Modular Desk Organizer" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-teal-400" />
+              <div class="mt-1.5 flex flex-wrap items-center gap-1.5 text-[11px] text-slate-400">
+                <span>Try:</span>
+                <button type="button" data-try="Smart Ring" class="try-kw-chip px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300">Smart Ring</button>
+                <button type="button" data-try="MagSafe Charger" class="try-kw-chip px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300">MagSafe Charger</button>
+                <button type="button" data-try="Gym Sets" class="try-kw-chip px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300">Gym Sets</button>
+                <button type="button" data-try="Silicone Mat" class="try-kw-chip px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300">Silicone Mat</button>
               </div>
             </div>
-
             <div>
-              <label class="block text-xs font-semibold text-slate-300 mb-1.5" data-i18n="lbl_ship_mode">
-                Cross-Border Freight Mode (per kg landed)
-              </label>
-              <select id="shippingModeSelect"
-                class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white focus:outline-none focus:border-teal-400">
+              <div class="flex items-center justify-between mb-1.5">
+                <label class="text-xs font-semibold text-slate-300">1688 Chinese Factory Keyword</label>
+                <a id="open1688SearchLink" href="https://s.1688.com/selloffer/offer_search.htm" target="_blank" rel="noopener noreferrer" class="text-[11px] text-teal-400 hover:underline font-semibold">Search on 1688.com ↗</a>
+              </div>
+              <div class="flex gap-2">
+                <input id="cnKeywordInput" type="text" value="磁吸桌面收纳盒 源头工厂" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-amber-300 font-medium focus:outline-none focus:border-teal-400" />
+                <button id="copyKwBtn" type="button" class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-600 text-xs font-semibold text-teal-300 shrink-0">Copy</button>
+              </div>
+              <div class="mt-1.5 text-[11px] text-slate-400">Matched Industrial Belt: <strong id="matchedBeltText" class="text-teal-300">Ningbo / Taizhou, Zhejiang (模具注塑产业带)</strong></div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-1">
+            <div class="bg-slate-900/90 p-3.5 rounded-xl border border-slate-800">
+              <label class="block text-xs text-slate-400 mb-1">1688 Factory Price (¥ RMB)</label>
+              <input id="rmbPriceInput" type="number" step="0.5" min="1" value="24" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-1.5 text-base font-bold text-teal-300 focus:outline-none focus:border-teal-400" />
+              <div class="mt-1 text-[11px] text-slate-400">≈ <span id="usdFactoryEquiv" class="text-slate-200 font-semibold">$3.60</span> USD EXW</div>
+            </div>
+            <div class="bg-slate-900/90 p-3.5 rounded-xl border border-slate-800">
+              <label class="block text-xs text-slate-400 mb-1">AliExpress / Middleman ($ USD)</label>
+              <input id="aliPriceInput" type="number" step="0.5" min="1" value="11.50" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-1.5 text-base font-bold text-rose-300 focus:outline-none focus:border-teal-400" />
+              <div class="mt-1 text-[11px] text-slate-400">Typical English wholesale price</div>
+            </div>
+            <div class="bg-slate-900/90 p-3.5 rounded-xl border border-slate-800">
+              <label class="block text-xs text-slate-400 mb-1">Target US Retail Price ($ USD)</label>
+              <input id="retailPriceInput" type="number" step="1" min="5" value="36.00" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-1.5 text-base font-bold text-emerald-300 focus:outline-none focus:border-teal-400" />
+              <div class="mt-1 text-[11px] text-slate-400">TikTok Shop / Amazon / Etsy</div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1.5">USITC HTS Category (Base Duty + Section 301 China Tariff)</label>
+              <select id="htsCategorySelect" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white focus:outline-none focus:border-teal-400">
+                <option value="0.114" data-code="3926.10.00">Home/Office Plastic &amp; Acrylic (HTS 3926.10) — 11.4%</option>
+                <option value="0.075" data-code="8517.62.00">Smart Rings, BLE Wearables &amp; Audio (HTS 8517.62) — 7.5%</option>
+                <option value="0.250" data-code="8504.40.85">MagSafe Wireless Chargers &amp; Power (HTS 8504.40) — 25.0%</option>
+                <option value="0.289" data-code="8509.80.50">Small Home, Kitchen &amp; Pet Appliances (HTS 8509.80) — 28.9%</option>
+                <option value="0.112" data-code="8516.71.00">Portable Espresso &amp; Coffee Makers (HTS 8516.71) — 11.2%</option>
+                <option value="0.109" data-code="3924.10.40">Silicone Kitchenware &amp; Baby Feeding (HTS 3924.10) — 10.9%</option>
+                <option value="0.102" data-code="9405.42.80">LED Lighting, Lamps &amp; Neon Signs (HTS 9405.42) — 10.2%</option>
+                <option value="0.251" data-code="4202.92.31">Backpacks, Bags &amp; Packing Cubes (HTS 4202.92) — 25.1%</option>
+                <option value="0.075" data-code="9503.00.00">Toys, Montessori &amp; Plushies (HTS 9503.00) — 7.5%</option>
+                <option value="0.147" data-code="9617.00.10">Insulated Stainless Tumblers (HTS 9617.00) — 14.7%</option>
+                <option value="0.357" data-code="6104.63.20">Seamless Gym Sets &amp; Yoga Leggings (HTS 6104.63) — 35.7%</option>
+                <option value="0.185" data-code="7117.19.90">PVD Stainless Jewelry &amp; Accessories (HTS 7117.19) — 18.5%</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1.5">Cross-Border Freight Mode (per kg landed)</label>
+              <select id="shippingModeSelect" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white focus:outline-none focus:border-teal-400">
                 <option value="2.20">Matson Fast Sea DDP (14–18 days) — $2.20 / kg</option>
                 <option value="5.80" selected>Dedicated Air Line DDP (7–10 days) — $5.80 / kg</option>
                 <option value="9.50">DHL / FedEx Express (3–5 days) — $9.50 / kg</option>
@@ -273,24 +184,18 @@
             </div>
           </div>
 
-          <!-- Weight, Batch Qty, Platform Channel -->
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div>
-              <label class="block text-xs font-semibold text-slate-300 mb-1.5" data-i18n="lbl_weight">Unit Weight (kg, incl. box)</label>
-              <input id="unitWeightInput" type="number" step="0.05" min="0.05" value="0.45"
-                class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-teal-400" />
+              <label class="block text-xs font-semibold text-slate-300 mb-1.5">Unit Weight (kg, incl. box)</label>
+              <input id="unitWeightInput" type="number" step="0.05" min="0.05" value="0.45" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-teal-400" />
             </div>
-
             <div>
-              <label class="block text-xs font-semibold text-slate-300 mb-1.5" data-i18n="lbl_moq">Order Batch Qty (Units)</label>
-              <input id="batchQtyInput" type="number" step="10" min="10" value="200"
-                class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-teal-400" />
+              <label class="block text-xs font-semibold text-slate-300 mb-1.5">Order Batch Qty (Units)</label>
+              <input id="batchQtyInput" type="number" step="10" min="10" value="200" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-teal-400" />
             </div>
-
             <div>
-              <label class="block text-xs font-semibold text-slate-300 mb-1.5" data-i18n="lbl_channel">US Sales Channel Fee + US Fulfillment</label>
-              <select id="salesChannelSelect"
-                class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white focus:outline-none focus:border-teal-400">
+              <label class="block text-xs font-semibold text-slate-300 mb-1.5">US Sales Channel Fee + US Fulfillment</label>
+              <select id="salesChannelSelect" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white focus:outline-none focus:border-teal-400">
                 <option value="tiktok" data-comm="0.08" data-fulfill="4.25">TikTok Shop US (8% Fee + $4.25 FBT)</option>
                 <option value="amazon" data-comm="0.15" data-fulfill="5.40">Amazon FBA US (15% Fee + $5.40 FBA)</option>
                 <option value="etsy" data-comm="0.095" data-fulfill="4.50">Etsy US (9.5% Total Fee + $4.50 USPS)</option>
@@ -301,688 +206,302 @@
         </div>
       </div>
 
-      <!-- Right Column: Output Breakdown & Margin Comparison (5 cols) -->
       <div class="lg:col-span-5 space-y-5">
         <div class="glass-card rounded-2xl p-5 space-y-4 border-teal-500/30">
           <div class="flex items-center justify-between">
-            <span class="text-xs font-bold uppercase tracking-wider text-teal-400" data-i18n="res_header">
-              Unit Economics & Arbitrage Verdict
-            </span>
-            <span id="htsBadgeDisplay" class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">
-              HTS 3926.10 · 11.4% Duty
-            </span>
+            <span class="text-xs font-bold uppercase tracking-wider text-teal-400">Unit Economics &amp; Arbitrage Verdict</span>
+            <span id="htsBadgeDisplay" class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">HTS 3926.10.00 · 11.4% Duty</span>
           </div>
 
-          <!-- Primary KPIs -->
           <div class="grid grid-cols-2 gap-3">
             <div class="bg-slate-900/95 border border-emerald-500/30 rounded-xl p-3.5">
-              <div class="text-xs text-slate-400" data-i18n="kpi_net_profit">1688 Direct Net Profit / Unit</div>
-              <div id="netProfitPerUnit" class="text-2xl font-extrabold text-emerald-400 mt-1">$21.18</div>
-              <div class="text-xs text-emerald-300/90 font-medium mt-0.5">
-                <span data-i18n="kpi_margin">Net Margin:</span> <span id="netMarginPct">58.8%</span>
-              </div>
+              <div class="text-xs text-slate-400">1688 Direct Net Profit / Unit</div>
+              <div id="netProfitPerUnit" class="text-2xl font-extrabold text-emerald-400 mt-1">$21.68</div>
+              <div class="text-xs text-emerald-300/90 font-medium mt-0.5">Net Margin: <span id="netMarginPct">60.2%</span></div>
             </div>
-
             <div class="bg-slate-900/95 border border-blue-500/30 rounded-xl p-3.5">
-              <div class="text-xs text-slate-400" data-i18n="kpi_batch_profit">Batch Net Profit (<span id="batchQtyLabel">200</span> units)</div>
-              <div id="totalBatchProfit" class="text-2xl font-extrabold text-blue-400 mt-1">$4,236</div>
-              <div class="text-xs text-blue-300/90 font-medium mt-0.5">
-                <span data-i18n="kpi_roi">Inventory ROI:</span> <span id="batchRoiPct">273%</span>
-              </div>
+              <div class="text-xs text-slate-400">Batch Net Profit (<span id="batchQtyLabel">200</span> units)</div>
+              <div id="totalBatchProfit" class="text-2xl font-extrabold text-blue-400 mt-1">$4,336</div>
+              <div class="text-xs text-blue-300/90 font-medium mt-0.5">Inventory ROI: <span id="batchRoiPct">302%</span></div>
             </div>
           </div>
 
-          <!-- Landed Cost Waterfall Table -->
           <div class="bg-slate-950/80 rounded-xl p-3.5 border border-slate-800 space-y-2 text-xs">
             <div class="font-semibold text-slate-300 pb-1 border-b border-slate-800 flex justify-between">
-              <span data-i18n="wf_title">Cost Component Breakdown (Per Unit)</span>
+              <span>Cost Component Breakdown (Per Unit)</span>
               <span>USD ($)</span>
             </div>
             <div class="flex justify-between text-slate-300">
-              <span data-i18n="wf_exw">1. 1688 Factory EXW Price + CN Domestic (¥2.5)</span>
-              <span id="wfExwUsd" class="font-mono font-semibold">$3.96</span>
+              <span>1. 1688 Factory EXW Price + CN Domestic (¥2.5)</span>
+              <span id="wfExwUsd" class="font-mono font-semibold">$3.97</span>
             </div>
             <div class="flex justify-between text-slate-300">
-              <span data-i18n="wf_freight">2. Cross-Border Freight + 3PL Inspection</span>
+              <span>2. Cross-Border Freight + 3PL Inspection</span>
               <span id="wfFreightUsd" class="font-mono font-semibold">$2.81</span>
             </div>
             <div class="flex justify-between text-amber-300">
-              <span data-i18n="wf_duty">3. US Customs HTS Duty + Sec. 301 Tariff</span>
-              <span id="wfDutyUsd" class="font-mono font-semibold">$0.45</span>
+              <span>3. US Customs HTS Duty + Sec. 301 Tariff</span>
+              <span id="wfDutyUsd" class="font-mono font-semibold">$0.41</span>
             </div>
             <div class="flex justify-between text-slate-200 font-semibold pt-1 border-t border-slate-800/80">
-              <span data-i18n="wf_landed">Total US Warehouse Landed Cost</span>
-              <span id="wfLandedTotal" class="font-mono text-teal-300">$7.22</span>
+              <span>Total US Warehouse Landed Cost</span>
+              <span id="wfLandedTotal" class="font-mono text-teal-300">$7.19</span>
             </div>
             <div class="flex justify-between text-slate-400">
-              <span data-i18n="wf_channel">4. US Marketplace Commission + Local Fulfillment</span>
+              <span>4. US Marketplace Commission + Local Fulfillment</span>
               <span id="wfChannelFee" class="font-mono">$7.13</span>
             </div>
           </div>
 
-          <!-- Visual Margin Bar Comparison: 1688 Direct vs AliExpress Middleman -->
           <div class="bg-slate-900/70 rounded-xl p-3.5 border border-slate-800 space-y-3">
             <div class="text-xs font-semibold text-slate-200 flex items-center justify-between">
-              <span data-i18n="cmp_title">Why Bypassing AliExpress / Middlemen Matters</span>
-              <span id="savingsBadge" class="text-emerald-400 font-bold">+$1,580 Extra Profit / Batch</span>
+              <span>Why Bypassing AliExpress / Middlemen Matters</span>
+              <span id="savingsBadge" class="text-emerald-400 font-bold">+$1,362 Extra Profit / Batch</span>
             </div>
-
             <div class="space-y-1">
               <div class="flex justify-between text-xs">
-                <span class="text-teal-300 font-medium" data-i18n="bar_1688">1688 Direct Sourcing Net Margin</span>
-                <span id="bar1688Label" class="font-bold text-teal-300">$21.65 / unit (60.1%)</span>
+                <span class="text-teal-300 font-medium">1688 Direct Sourcing Net Margin</span>
+                <span id="bar1688Label" class="font-bold text-teal-300">$21.68 / unit (60.2%)</span>
               </div>
               <div class="w-full h-2.5 bg-slate-800 rounded-full overflow-hidden">
                 <div id="bar1688Fill" class="h-full bg-gradient-to-r from-teal-500 to-emerald-400 rounded-full transition-all duration-300" style="width: 60%"></div>
               </div>
             </div>
-
             <div class="space-y-1">
               <div class="flex justify-between text-xs">
-                <span class="text-rose-300 font-medium" data-i18n="bar_ali">AliExpress / US Dropship Middleman Margin</span>
-                <span id="barAliLabel" class="font-bold text-rose-300">$13.75 / unit (38.2%)</span>
+                <span class="text-rose-300 font-medium">AliExpress / US Dropship Middleman Margin</span>
+                <span id="barAliLabel" class="font-bold text-rose-300">$14.87 / unit (41.3%)</span>
               </div>
               <div class="w-full h-2.5 bg-slate-800 rounded-full overflow-hidden">
-                <div id="barAliFill" class="h-full bg-rose-500/80 rounded-full transition-all duration-300" style="width: 38%"></div>
+                <div id="barAliFill" class="h-full bg-rose-500/80 rounded-full transition-all duration-300" style="width: 41%"></div>
               </div>
             </div>
           </div>
 
-          <!-- Conversion Hook Button -->
-          <button type="button" id="calcToAuditBtn"
-            class="w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm bg-gradient-to-r from-blue-600 via-indigo-600 to-teal-600 hover:opacity-95 text-white shadow-lg shadow-blue-600/25 transition flex items-center justify-center gap-2">
-            <span data-i18n="cta_audit_btn">Unlock 3 Verified 1688 Factories & HTS Dossier ($29) →</span>
-          </button>
+          <a href="https://www.creem.io/payment/prod_5NMSi2soem8Hs8hz60ce25" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm bg-gradient-to-r from-blue-600 via-indigo-600 to-teal-600 hover:opacity-95 text-white shadow-lg shadow-blue-600/25 transition flex items-center justify-center gap-2">
+            <span>Unlock 3 Verified 1688 Factories &amp; HTS Dossier ($29) →</span>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- ==================== TAB 2: 1688 TRUE FACTORY VERIFIER ==================== -->
+    <!-- TAB 2: 1688 VERIFIER -->
     <section id="view-verifier" class="tab-view hidden grid-cols-1 lg:grid-cols-12 gap-6">
       <div class="lg:col-span-7 glass-card rounded-2xl p-5 space-y-5">
         <div class="border-b border-slate-800 pb-3">
-          <h2 class="text-base sm:text-lg font-bold text-white" data-i18n="ver_title">
-            1688 True Factory vs. Trading Middleman Scorer
-          </h2>
-          <p class="text-xs text-slate-400" data-i18n="ver_desc">
-            70% of suppliers on 1688 & Alibaba are trading companies marking up prices 25%–45%. Enter the supplier's profile signals below to run our proprietary verification check.
-          </p>
+          <h2 class="text-base sm:text-lg font-bold text-white">1688 True Factory vs. Trading Middleman Scorer</h2>
+          <p class="text-xs text-slate-400">70% of suppliers on 1688 &amp; Alibaba are trading companies marking up prices 25%–45%. Score any supplier profile below:</p>
         </div>
-
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label class="block text-xs font-semibold text-slate-300 mb-1.5" data-i18n="ver_lbl_badge">
-              1. 1688 Store Verification Badge Tier
-            </label>
+            <label class="block text-xs font-semibold text-slate-300 mb-1.5">1. 1688 Store Verification Badge Tier</label>
             <select id="verBadgeSelect" class="ver-input w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white">
               <option value="30">Super Factory (超级工厂 — TUV/SGS Onsite Audited)</option>
-              <option value="24" selected>Bull Head Badge (牛头实力商家 — Verified Plant & >¥16k Deposit)</option>
-              <option value="10">Ordinary Chengxintong (普通诚信通 — Basic ¥6,688 Annual Membership)</option>
+              <option value="24" selected>Bull Head Badge (牛头实力商家 — Verified Plant &amp; &gt;¥16k Deposit)</option>
+              <option value="10">Ordinary Chengxintong (普通诚信通 — Basic ¥6,688 Membership)</option>
               <option value="0">Unverified / Less than 1 Year Store</option>
             </select>
           </div>
-
           <div>
-            <label class="block text-xs font-semibold text-slate-300 mb-1.5" data-i18n="ver_lbl_license">
-              2. Business License Scope Keywords (经营范围)
-            </label>
+            <label class="block text-xs font-semibold text-slate-300 mb-1.5">2. Business License Scope Keywords (经营范围)</label>
             <select id="verLicenseSelect" class="ver-input w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white">
-              <option value="25" selected>Contains "生产 / 制造 / 加工" (Manufacturing & Processing)</option>
-              <option value="8">Only "销售 / 批发 / 贸易 / 电子商务" (Sales, Wholesale, E-commerce Only)</option>
+              <option value="25" selected>Contains "生产 / 制造 / 加工" (Manufacturing &amp; Processing)</option>
+              <option value="8">Only "销售 / 批发 / 贸易 / 电子商务" (Trading Reseller Only)</option>
               <option value="0">Cannot Locate / Unclear Business Registration</option>
             </select>
           </div>
-
           <div>
-            <label class="block text-xs font-semibold text-slate-300 mb-1.5" data-i18n="ver_lbl_repurchase">
-              3. 30-Day Buyer Repurchase Rate (回头率)
-            </label>
+            <label class="block text-xs font-semibold text-slate-300 mb-1.5">3. 30-Day Buyer Repurchase Rate (回头率)</label>
             <select id="verRepurchaseSelect" class="ver-input w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white">
               <option value="15" selected>High B2B Retention: ≥ 28% Repurchase Rate</option>
               <option value="10">Moderate Retention: 15% – 27% Repurchase Rate</option>
               <option value="3">Low Retention: &lt; 15% (Warning: Retail / One-off Buyers)</option>
             </select>
           </div>
-
           <div>
-            <label class="block text-xs font-semibold text-slate-300 mb-1.5" data-i18n="ver_lbl_cluster">
-              4. China Industrial Belt Alignment (源头产业带匹配)
-            </label>
+            <label class="block text-xs font-semibold text-slate-300 mb-1.5">4. China Industrial Belt Alignment (源头产业带匹配)</label>
             <select id="verClusterSelect" class="ver-input w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white">
-              <option value="15" selected>Exact Industrial Cluster Match (e.g. Ningbo Plastics, Shenzhen 3C, Yiwu Crafts)</option>
+              <option value="15" selected>Exact Industrial Cluster Match (Ningbo, Shenzhen, Yiwu, Shunde)</option>
               <option value="7">Same Province, Secondary Commercial City</option>
-              <option value="0">Mismatch (e.g. Electronics seller registered in inland residential office)</option>
+              <option value="0">Mismatch (Inland residential office)</option>
             </select>
           </div>
-
           <div>
-            <label class="block text-xs font-semibold text-slate-300 mb-1.5" data-i18n="ver_lbl_sku">
-              5. Store Catalog Consistency (SKU Focus)
-            </label>
+            <label class="block text-xs font-semibold text-slate-300 mb-1.5">5. Store Catalog Consistency (SKU Focus)</label>
             <select id="verSkuSelect" class="ver-input w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white">
               <option value="15" selected>Focused Category (1–2 core product lines, deep mold variations)</option>
-              <option value="4">Department Store Mix (500+ random trending items across unrelated niches)</option>
+              <option value="4">Department Store Mix (500+ random trending items)</option>
             </select>
           </div>
-
           <div>
-            <label class="block text-xs font-semibold text-slate-300 mb-1.5" data-i18n="ver_lbl_custom">
-              6. Custom Mold / Private Label Capability
-            </label>
+            <label class="block text-xs font-semibold text-slate-300 mb-1.5">6. Custom Mold / Private Label Capability</label>
             <select id="verCustomSelect" class="ver-input w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white">
-              <option value="10" selected>Supports Custom Logo, Pantone Color & Packaging at 100–300 MOQ</option>
+              <option value="10" selected>Supports Custom Logo, Pantone Color &amp; Box at 100–300 MOQ</option>
               <option value="5">Spot Goods Only (现货批发 — No Structural Customization)</option>
             </select>
           </div>
         </div>
       </div>
 
-      <!-- Right Column: Score Gauge + Bilingual Negotiation Script -->
       <div class="lg:col-span-5 space-y-5">
         <div class="glass-card rounded-2xl p-5 space-y-4">
           <div class="flex items-center justify-between">
-            <span class="text-xs font-bold uppercase tracking-wider text-teal-400" data-i18n="ver_score_header">
-              Factory Authenticity Score
-            </span>
-            <span id="verTierBadge" class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
-              Tier-1 Verified Direct Factory
-            </span>
+            <span class="text-xs font-bold uppercase tracking-wider text-teal-400">Factory Authenticity Score</span>
+            <span id="verTierBadge" class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">Tier-1 Verified Direct Factory</span>
           </div>
-
           <div class="flex items-center gap-5 bg-slate-900/90 p-4 rounded-xl border border-slate-800">
             <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-emerald-500/20 to-teal-500/20 border-2 border-emerald-400 flex flex-col items-center justify-center shrink-0">
               <span id="verTotalScore" class="text-3xl font-extrabold text-emerald-400">94</span>
               <span class="text-[10px] uppercase text-slate-400 font-semibold">/ 100 PTS</span>
             </div>
             <div class="space-y-1 text-xs">
-              <div id="verVerdictTitle" class="font-bold text-sm text-white">
-                High-Confidence Source Manufacturer (真源头工厂)
-              </div>
-              <p id="verVerdictAdvice" class="text-slate-300 leading-relaxed">
-                This supplier holds manufacturing registration and sits inside the primary industrial belt. Safe to request sample customization and negotiate 8%–12% off listed 1688 tier-1 pricing.
-              </p>
+              <div id="verVerdictTitle" class="font-bold text-sm text-white">High-Confidence Source Manufacturer (真源头工厂)</div>
+              <p id="verVerdictAdvice" class="text-slate-300 leading-relaxed">This supplier holds manufacturing registration inside the primary industrial belt. Safe to request sample customization and negotiate 8%–12% off listed 1688 tier-1 pricing.</p>
             </div>
           </div>
-
-          <!-- Auto-Generated Chinese Negotiation Script for US Buyers -->
           <div class="space-y-2">
             <div class="flex items-center justify-between">
-              <label class="text-xs font-semibold text-slate-200" data-i18n="script_title">
-                Ready-to-Send 1688 AliWangWang / WeChat Factory Script (Insider Chinese)
-              </label>
-              <button id="copyScriptBtn" type="button" class="px-2.5 py-1 rounded bg-teal-500/20 hover:bg-teal-500/30 border border-teal-500/40 text-teal-300 text-xs font-semibold">
-                Copy Script
-              </button>
+              <label class="text-xs font-semibold text-slate-200">Ready-to-Send 1688 AliWangWang / WeChat Script</label>
+              <button id="copyScriptBtn" type="button" class="px-2.5 py-1 rounded bg-teal-500/20 hover:bg-teal-500/30 border border-teal-500/40 text-teal-300 text-xs font-semibold">Copy Script</button>
             </div>
-            <p class="text-[11px] text-slate-400" data-i18n="script_hint">
-              Never open with English or say you buy 1 piece—factories will quote retail prices. Copy this native B2B procurement message:
-            </p>
-            <textarea id="negotiationScriptBox" rows="5" readonly
-              class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-amber-200 font-mono leading-relaxed focus:outline-none">王总您好，我们是做北美亚马逊与TikTok跨境专供的采购团队，目前正在为下季度备货选款。看到贵厂的【磁吸桌面收纳盒 源头工厂】，想先拿3个样品看下做工和材质。如果测评达标，首单预计200件起订（后续按月返单），请问贵厂支持激光丝印Logo和彩盒定制吗？请发一份梯度出厂报价单（EXW不含税价）及外箱体积重量参数，谢谢！</textarea>
+            <textarea id="negotiationScriptBox" rows="4" readonly class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-amber-200 font-mono leading-relaxed focus:outline-none"></textarea>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== TAB 3: VIRAL TEARDOWN CASE LIBRARY ==================== -->
+    <!-- TAB 3: CASE LIBRARY -->
     <section id="view-samples" class="tab-view hidden space-y-5">
       <div class="glass-card rounded-2xl p-5">
-        <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
-          <div>
-            <h2 class="text-base sm:text-lg font-bold text-white" data-i18n="lib_title">
-              Curated US-China Supply Chain Arbitrage Case Studies
-            </h2>
-            <p class="text-xs text-slate-400" data-i18n="lib_desc">
-              Click any case below to load its exact 1688 factory cost, HTS duty code, and weight parameters into the calculator.
-            </p>
-          </div>
-        </div>
-
-        <div id="caseCardsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <!-- Populated dynamically by JS -->
-        </div>
+        <h2 class="text-base sm:text-lg font-bold text-white mb-1">Curated US-China Supply Chain Arbitrage Case Studies</h2>
+        <p class="text-xs text-slate-400 mb-4">Click any case below to load its exact 1688 factory cost, HTS duty code, and weight parameters into the calculator.</p>
+        <div id="caseCardsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
       </div>
     </section>
 
-    <!-- ==================== TAB 4: $29 PRO DOSSIER & AFFILIATE REVENUE HUB ==================== -->
+    <!-- TAB 4: $29 PRO DOSSIER -->
     <section id="view-audit" class="tab-view hidden grid-cols-1 lg:grid-cols-12 gap-6">
-      <!-- Left: $29 SinoScout Pro Digital Dossier & License -->
       <div class="lg:col-span-7 glass-card rounded-2xl p-5 space-y-4 border-blue-500/30">
         <div class="flex items-center justify-between border-b border-slate-800 pb-3">
           <div>
-            <span class="text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300">
-              SinoScout™ Pro Digital License & Data Dossier ($29 USD)
-            </span>
-            <h2 class="text-base sm:text-lg font-bold text-white mt-1" data-i18n="audit_title">
-              1688 Verified Factory Database Export & Custom HTS Landed Cost Dossier
-            </h2>
+            <span class="text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300">SinoScout™ Pro Digital License &amp; Data Dossier ($29 USD)</span>
+            <h2 class="text-base sm:text-lg font-bold text-white mt-1">1688 Verified Factory Database Export &amp; Custom HTS Landed Cost Dossier</h2>
           </div>
           <div class="text-right">
             <div class="text-2xl font-extrabold text-white">$29</div>
             <div class="text-[11px] text-slate-400">One-Time License</div>
           </div>
         </div>
-
-        <p class="text-xs text-slate-300 leading-relaxed" data-i18n="audit_pitch">
-          Unlock the SinoScout™ Pro Sourcing Intelligence Package: includes our complete 50-Factory China Industrial Belt Directory (CSV/PDF) plus a custom-generated 3-Page 1688 Manufacturer Verification & USITC HTS Tariff Dossier for your target SKU:
-        </p>
-
+        <p class="text-xs text-slate-300 leading-relaxed">Unlock the SinoScout™ Pro Sourcing Intelligence Package: includes our 50-Factory China Industrial Belt Directory plus a custom-generated 3-Page 1688 Manufacturer Verification &amp; USITC HTS Tariff Dossier for your target SKU within 24 hours:</p>
         <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs text-slate-200">
-          <li class="bg-slate-900/80 p-2.5 rounded-lg border border-slate-800 flex items-start gap-2">
-            <span class="text-emerald-400 font-bold">✓</span>
-            <span><strong>3 Verified 1688 Direct Factories</strong> (Business license & Bull Head / Super Factory data report)</span>
-          </li>
-          <li class="bg-slate-900/80 p-2.5 rounded-lg border border-slate-800 flex items-start gap-2">
-            <span class="text-emerald-400 font-bold">✓</span>
-            <span><strong>Exact USITC HTS Code & Duty Sheet</strong> (Incl. Section 301 tariff & DDP freight matrix)</span>
-          </li>
-          <li class="bg-slate-900/80 p-2.5 rounded-lg border border-slate-800 flex items-start gap-2">
-            <span class="text-emerald-400 font-bold">✓</span>
-            <span><strong>MOQ & Private Label Quote Table</strong> (100 / 500 / 1,000 unit EXW price benchmarks)</span>
-          </li>
-          <li class="bg-slate-900/80 p-2.5 rounded-lg border border-slate-800 flex items-start gap-2">
-            <span class="text-emerald-400 font-bold">✓</span>
-            <span><strong>50-Cluster China Industrial Belt Database</strong> (Instant digital download + bilingual scripts)</span>
-          </li>
+          <li class="bg-slate-900/80 p-2.5 rounded-lg border border-slate-800">✓ <strong>3 Verified 1688 Direct Factories</strong> (Business license &amp; Bull Head / Super Factory vetted)</li>
+          <li class="bg-slate-900/80 p-2.5 rounded-lg border border-slate-800">✓ <strong>Exact USITC HTS Code &amp; Duty Sheet</strong> (Incl. Section 301 tariff &amp; DDP freight matrix)</li>
+          <li class="bg-slate-900/80 p-2.5 rounded-lg border border-slate-800">✓ <strong>MOQ &amp; Private Label Quote Table</strong> (100 / 500 / 1,000 unit EXW price benchmarks)</li>
+          <li class="bg-slate-900/80 p-2.5 rounded-lg border border-slate-800">✓ <strong>Bilingual WeChat / AliWangWang Scripts</strong> (14-day 100% money-back guarantee)</li>
         </ul>
-
-        <!-- Dedicated $29 Custom Sourcing Audit Order Form -->
-        <div class="space-y-3 pt-2" id="redeemSectionBox">
-          <div>
-            <label class="block text-xs font-semibold text-slate-300 mb-1">1. Target Product URL or Name (Amazon, TikTok Shop, Etsy, or AliExpress)</label>
-            <input id="auditUrlInput" type="url" placeholder="https://www.amazon.com/dp/B0... (optional — or leave blank for instant checkout)"
-              class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white focus:outline-none focus:border-teal-400" />
-          </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <div>
-              <label class="block text-xs font-semibold text-slate-300 mb-1">2. Target Order Quantity &amp; Customization</label>
-              <input id="auditSpecInput" type="text" value="200 units with custom logo box"
-                class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white focus:outline-none focus:border-teal-400" />
-            </div>
-            <div>
-              <label class="block text-xs font-semibold text-slate-300 mb-1">3. Your Email (for Dossier Delivery)</label>
-              <input id="auditEmailInput" type="email" placeholder="founder@yourbrand.com"
-                class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white focus:outline-none focus:border-teal-400" />
-            </div>
-          </div>
-
-          <a id="submitAuditOrderBtn" href="https://www.creem.io/payment/prod_5NMSi2soem8Hs8hz60ce25" target="_blank" rel="noopener noreferrer"
-            class="w-full py-3.5 px-4 rounded-xl font-bold text-xs sm:text-sm bg-gradient-to-r from-emerald-500 to-teal-600 hover:opacity-95 text-white shadow-lg shadow-emerald-600/20 transition flex items-center justify-center gap-1.5 cursor-pointer text-center no-underline">
-            <span id="submitAuditBtnLabel">Order SinoScout™ Pro Sourcing Dossier ($29 USD) →</span>
-          </a>
-
-          <!-- Generated Ticket Preview Box -->
-          <div id="auditTicketPreview" class="hidden bg-slate-950 border border-emerald-500/40 rounded-xl p-4 space-y-3 text-xs">
-            <div class="flex items-center justify-between text-emerald-400 font-bold">
-              <span id="auditTicketTitle">✓ Pro Dossier Configuration Saved (#SS-2026-884)</span>
-              <button id="copyTicketBtn" type="button" class="underline text-teal-300">Copy Order Ticket</button>
-            </div>
-            <p id="auditTicketText" class="text-slate-300 font-mono whitespace-pre-line"></p>
-          </div>
+        <div class="flex flex-col sm:flex-row gap-3 pt-2">
+          <a href="https://www.creem.io/payment/prod_5NMSi2soem8Hs8hz60ce25" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 px-4 rounded-xl font-bold text-sm bg-gradient-to-r from-emerald-500 to-teal-600 hover:opacity-95 text-white text-center shadow-lg shadow-emerald-600/20 transition">Proceed to Secure $29 Checkout →</a>
+          <a href="https://creem.io/stores/sinoscout" target="_blank" rel="noopener noreferrer" class="py-3 px-4 rounded-xl font-semibold text-xs sm:text-sm bg-slate-900 hover:bg-slate-800 border border-slate-700 text-teal-300 text-center transition">Visit Official Storefront ↗</a>
         </div>
       </div>
 
-      <!-- Right: B2B Affiliate & Fulfillment Ecosystem (Layer 3 Moat) -->
-      <div class="lg:col-span-5 space-y-4">
-        <div class="glass-card rounded-2xl p-5 space-y-4">
-          <div>
-            <span class="text-[11px] font-bold uppercase tracking-wider text-amber-400">
-              Backend Supply Chain & Affiliate Ecosystem
-            </span>
-            <h3 class="text-base font-bold text-white mt-0.5" data-i18n="aff_title">
-              Recommended Cross-Border Fulfillment & Payment Stack
-            </h3>
-            <p class="text-xs text-slate-400 mt-1" data-i18n="aff_desc">
-              Every seller using SinoScout needs RMB supplier settlement, 3PL consolidation, or US local POD testing—creating recurring partner value.
-            </p>
-          </div>
-
-          <div class="space-y-3 text-xs">
-            <a href="https://www.worldfirst.com/nz/blog/ecommerce-seller-resources/the-guide-to-buy-from-1688-outside-china/" target="_blank" rel="noopener noreferrer"
-              class="block bg-slate-900/90 hover:bg-slate-900 p-3.5 rounded-xl border border-slate-800 hover:border-blue-500/40 flex flex-col gap-1.5 transition">
-              <div class="flex items-center justify-between">
-                <span class="font-bold text-white">1. WorldFirst 1688 Direct RMB Payment ↗</span>
-                <span class="px-2 py-0.5 rounded bg-blue-500/20 text-blue-300 font-semibold">RMB Settlement Solution</span>
-              </div>
-              <p class="text-slate-400">Pay 1688 suppliers directly in RMB from overseas USD accounts without a Chinese mainland bank card.</p>
-            </a>
-
-            <a href="https://www.printful.com/integrations/tiktok-shop" target="_blank" rel="noopener noreferrer"
-              class="block bg-slate-900/90 hover:bg-slate-900 p-3.5 rounded-xl border border-slate-800 hover:border-purple-500/40 flex flex-col gap-1.5 transition">
-              <div class="flex items-center justify-between">
-                <span class="font-bold text-white">2. Printful / Printify TikTok Shop US Fast-Test ↗</span>
-                <span class="px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 font-semibold">3-Day US Shipping</span>
-              </div>
-              <p class="text-slate-400">Validate product demand with zero inventory via US domestic print-on-demand before placing a 200-unit 1688 factory order.</p>
-            </a>
-
-            <a href="https://www.zqsolution.com/how-to-start-dropshipping-on-tiktok-shop-source-products-from-1688-at-the-cheapest-price-and-build" target="_blank" rel="noopener noreferrer"
-              class="block bg-slate-900/90 hover:bg-slate-900 p-3.5 rounded-xl border border-slate-800 hover:border-teal-500/40 flex flex-col gap-1.5 transition">
-              <div class="flex items-center justify-between">
-                <span class="font-bold text-white">3. 1688 Consolidation & QC Inspection 3PL ↗</span>
-                <span class="px-2 py-0.5 rounded bg-teal-500/20 text-teal-300 font-semibold">FBA & FBT Prep</span>
-              </div>
-              <p class="text-slate-400">Receive parcels from multiple 1688 factories in Shenzhen/Yiwu, inspect quality, relabel FNSKU, and ship DDP to US warehouses.</p>
-            </a>
-          </div>
+      <div class="lg:col-span-5 glass-card rounded-2xl p-5 space-y-3 text-xs">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-amber-400">Cross-Border Fulfillment Stack</span>
+        <h3 class="text-base font-bold text-white">Recommended Payment &amp; 3PL Ecosystem</h3>
+        <div class="bg-slate-900/90 p-3 rounded-xl border border-slate-800">
+          <div class="font-bold text-white">1. WorldFirst 1688 Direct RMB Settlement</div>
+          <p class="text-slate-400 mt-1">Pay verified 1688 factories in RMB directly from USD business accounts without a mainland China bank card.</p>
+        </div>
+        <div class="bg-slate-900/90 p-3 rounded-xl border border-slate-800">
+          <div class="font-bold text-white">2. Shenzhen / Yiwu Consolidation &amp; FNSKU QC 3PL</div>
+          <p class="text-slate-400 mt-1">Combine samples from 3 factories, inspect defects, apply Amazon FNSKU labels, and ship Air/Matson DDP to US doorsteps.</p>
         </div>
       </div>
     </section>
 
-  
-    <!-- SEO Long-Tail Knowledge Hub for Google & AI Search Indexing -->
-    <section class="mt-10 glass-card rounded-2xl p-6 space-y-4 border-slate-800">
+    <!-- CLEAN-URL KNOWLEDGE BASE DIRECTORY -->
+    <section class="glass-card rounded-2xl p-6 space-y-5">
       <div class="border-b border-slate-800 pb-3 flex flex-wrap items-center justify-between gap-2">
         <div>
-          <span class="text-[11px] font-bold uppercase tracking-wider text-teal-400">US-China Supply Chain Knowledge Base & SEO Guides</span>
-          <h2 class="text-base sm:text-lg font-bold text-white mt-0.5">How US Sellers Source Direct from 1688.com &amp; Calculate USITC HTS Tariffs</h2>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-teal-400">US-China Supply Chain Knowledge Base &amp; Interactive Calculators</span>
+          <h2 class="text-lg font-bold text-white mt-0.5">30 Category-Specific 1688 Factory &amp; USITC HTS Tariff Calculators</h2>
         </div>
-        <div class="flex flex-wrap gap-2 text-xs">
-          <a href="/1688-factory-verification-guide.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">True Factory Verification Guide (All Categories) →</a>
-          <a href="/1688-to-amazon-fba-calculator.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">to Amazon FBA & TikTok Shop US Landed Co… (3926.10.00) →</a>
-          <a href="/china-section-301-tariff-hts-calculator.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">USITC HTS Duty & China Section 301 Tarif… (8509.80.50) →</a>
-          <a href="/1688-silicone-kitchenware-hts-3924-tariff-guide.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">Silicone Kitchenware & Baking Mats on (H… (3924.10.40) →</a>
-          <a href="/1688-stainless-steel-tumbler-hts-7323-sourcing.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">Insulated Stainless Steel Tumbler & US H… (7323.93.00) →</a>
-          <a href="/1688-pet-products-dog-collar-hts-4201-tariff-calculator.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">Pet Supplies, Dog Harnesses & Leashes on… (4201.00.30) →</a>
-          <a href="/1688-acrylic-desk-organizer-hts-3926-sourcing.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">Acrylic Home & Office Organizer Sourcing (3926.10.00) →</a>
-          <a href="/1688-led-neon-sign-lighting-hts-9405-tariff-guide.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">LED Neon Sign & Ambient Lighting Sourcing (9405.42.80) →</a>
-          <a href="/1688-pet-grooming-vacuum-appliance-hts-8509-calculator.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">Small Home & Pet Appliances on 1688 (8509.80.50) →</a>
-          <a href="/1688-portable-espresso-coffee-maker-hts-8516-sourcing.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">Portable Coffee & Espresso Maker Sourcing (8516.71.00) →</a>
-          <a href="/1688-bluetooth-earbuds-audio-hts-8518-tariff-calculator.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">Bluetooth Audio, Open-Ear Headphones & S… (8518.30.20) →</a>
-          <a href="/1688-magsafe-phone-case-charger-hts-8504-sourcing.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">MagSafe Accessories & Wireless Charger S… (3926.90.99) →</a>
-          <a href="/1688-travel-backpack-cosmetic-bag-hts-4202-tariff-guide.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">Bags, Travel Backpacks & Makeup Pouches … (4202.92.31) →</a>
-          <a href="/1688-baby-silicone-feeding-set-hts-3924-sourcing.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">Baby Feeding Supplies & Suction Plates S… (3924.10.40) →</a>
-          <a href="/1688-wooden-montessori-toys-hts-9503-tariff-calculator.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">Wooden Montessori Toys & Educational Gam… (9503.00.00) →</a>
-          <a href="/1688-yoga-activewear-leggings-hts-6104-sourcing-guide.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">Seamless Activewear, Yoga Leggings & Gym… (6104.63.20) →</a>
-          <a href="/1688-microfiber-cleaning-cloth-towel-hts-6307-calculator.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">Microfiber Cleaning Cloth & Car Drying T… (6307.10.20) →</a>
-          <a href="/1688-bamboo-home-storage-organizer-hts-4420-sourcing.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">Moso Bamboo Kitchen & Drawer Organizer (… (4420.90.80) →</a>
-          <a href="/1688-beauty-jade-roller-gua-sha-hts-7116-tariff-guide.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">Gua Sha Stone, Ice Roller & Microcurrent… (7116.20.40) →</a>
-          <a href="/1688-false-eyelashes-cosmetic-brushes-hts-9603-sourcing.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">DIY Cluster Lashes & Cosmetic Brush Set … (9603.30.60) →</a>
-          <a href="/1688-camping-tent-outdoor-gear-hts-6306-tariff-calculator.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">Outdoor Camping Gear, Pop-Up Tents & Sle… (6306.22.90) →</a>
-          <a href="/1688-pickleball-paddle-sports-hts-9506-sourcing-guide.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">T700 Carbon Fiber Pickleball Paddle & Sp… (9506.59.80) →</a>
-          <a href="/1688-car-dashcam-auto-accessories-hts-8525-calculator.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">Car Dashcam, Wireless CarPlay & Auto Det… (8525.89.40) →</a>
-          <a href="/1688-smart-watch-fitness-tracker-hts-8517-tariff-guide.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">Smart Ring & Fitness Tracker Sourcing (8517.62.00) →</a>
-          <a href="/1688-jewelry-stainless-steel-ring-hts-7117-sourcing.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">Waterproof PVD Gold Stainless Steel Jewe… (7117.19.90) →</a>
-          <a href="/1688-sunglasses-blue-light-glasses-hts-9004-calculator.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">Polarized Sunglasses & Acetate Eyewear S… (9004.10.00) →</a>
-          <a href="/1688-ceramic-coffee-mug-tableware-hts-6912-tariff-guide.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">Custom Ceramic Mugs & Matcha Bowl Sets S… (6912.00.44) →</a>
-          <a href="/1688-plush-toys-stuffed-animals-hts-9503-sourcing.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">Weighted Plushies & Custom Stuffed Toys … (9503.00.00) →</a>
-          <a href="/1688-custom-packaging-gift-boxes-hts-4819-calculator.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">Custom Rigid Magnetic Gift Boxes & Stand… (4819.20.00) →</a>
-          <a href="/1688-gardening-tools-planter-pots-hts-8201-sourcing-guide.html" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-teal-300 border border-slate-700">Stainless Gardening Tools, Self-Watering… (8201.50.00) →</a>
-        </div>
+        <a href="/1688-factory-verification-guide" class="text-xs font-bold text-emerald-400 hover:underline">Open 1688 Factory Scorer →</a>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs text-slate-300 leading-relaxed">
-        <article class="bg-slate-900/70 p-4 rounded-xl border border-slate-800/90 space-y-1.5">
-          <h3 class="font-bold text-white text-sm">1. 1688 vs. Alibaba &amp; AliExpress Price Arbitrage</h3>
-          <p class="text-slate-400">Over 65% of English-speaking suppliers on Alibaba.com and AliExpress are domestic trading companies sourcing from <strong>1688.com</strong> and adding a 25% to 45% markup. By translating your English product name into Chinese industrial belt terminology (such as <em>源头工厂</em> or <em>超级工厂</em>), US Amazon FBA and TikTok Shop sellers unlock true tier-1 EXW RMB pricing at 100–200 unit MOQs.</p>
-        </article>
-        <article class="bg-slate-900/70 p-4 rounded-xl border border-slate-800/90 space-y-1.5">
-          <h3 class="font-bold text-white text-sm">2. 4 Chinese Characters That Expose Trading Middlemen</h3>
-          <p class="text-slate-400">Before paying for samples, inspect the supplier&#39;s 1688 business license scope (<strong>经营范围</strong>). Verified manufacturers explicitly list <strong>生产</strong> (Production), <strong>制造</strong> (Manufacturing), or <strong>加工</strong> (Processing). Resellers only list <strong>批发</strong> (Wholesale) or <strong>贸易</strong> (Trading). Combine this with industrial cluster alignment (e.g., Ningbo for injection plastics, Shenzhen for 3C electronics).</p>
-        </article>
-        <article class="bg-slate-900/70 p-4 rounded-xl border border-slate-800/90 space-y-1.5">
-          <h3 class="font-bold text-white text-sm">3. USITC HTS Codes, Section 301 Tariffs &amp; DDP Freight</h3>
-          <p class="text-slate-400">Accurate unit economics require combining 1688 EXW cost with China domestic freight, USITC Harmonized Tariff Schedule (HTS) base duty, Section 301 China tariffs (7.5% to 25%), and Air or Matson Fast Sea DDP freight per kilogram. SinoScout models the complete doorstep cost waterfall before you wire a single dollar.</p>
-        </article>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
+        <a href="/1688-factory-verification-guide" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">1688 True Factory Verifier & Scorer</span><span class="text-[10px] font-mono text-slate-400 shrink-0">All Categories</span></a>
+        <a href="/1688-to-amazon-fba-calculator" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">1688 to Amazon FBA & TikTok Calculator</span><span class="text-[10px] font-mono text-slate-400 shrink-0">3926.10.00</span></a>
+        <a href="/china-section-301-tariff-hts-calculator" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">China Section 301 & USITC HTS Calculator</span><span class="text-[10px] font-mono text-slate-400 shrink-0">8509.80.50</span></a>
+        <a href="/1688-smart-watch-fitness-tracker-hts-8517-tariff-guide" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">Smart Ring HS Code & Wearable Duty (8517.62)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">8517.62.00</span></a>
+        <a href="/1688-silicone-kitchenware-hts-3924-tariff-guide" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">Silicone Kitchenware Calculator (HTS 3924.10)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">3924.10.40</span></a>
+        <a href="/1688-portable-espresso-coffee-maker-hts-8516-sourcing" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">Portable Espresso Maker HTS 8516.71 Tool</span><span class="text-[10px] font-mono text-slate-400 shrink-0">8516.71.00</span></a>
+        <a href="/1688-yoga-activewear-leggings-hts-6104-sourcing-guide" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">Seamless Gym Sets & Leggings (HTS 6104.63)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">6104.63.20</span></a>
+        <a href="/1688-ceramic-coffee-mug-tableware-hts-6912-tariff-guide" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">Ceramic Mugs & Matcha Sets (HTS 6912.00)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">6912.00.44</span></a>
+        <a href="/1688-magsafe-phone-case-charger-hts-8504-sourcing" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">MagSafe Charger & Case Supplier (HTS 8504)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">8504.40.85</span></a>
+        <a href="/1688-pet-grooming-vacuum-appliance-hts-8509-calculator" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">Pet Grooming Vacuum & Appliances (8509.80)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">8509.80.50</span></a>
+        <a href="/1688-acrylic-desk-organizer-hts-3926-sourcing" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">Acrylic Desk & Makeup Organizer (3926.10)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">3926.10.00</span></a>
+        <a href="/1688-bamboo-home-storage-organizer-hts-4420-sourcing" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">Moso Bamboo Drawer Organizer (HTS 4420.90)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">4420.90.80</span></a>
+        <a href="/1688-stainless-steel-tumbler-hts-7323-sourcing" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">40oz Insulated Tumbler Calculator (7323.93)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">7323.93.00</span></a>
+        <a href="/1688-pet-products-dog-collar-hts-4201-tariff-calculator" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">Pet Harnesses & Dog Collars (HTS 4201.00)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">4201.00.30</span></a>
+        <a href="/1688-led-neon-sign-lighting-hts-9405-tariff-guide" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">LED Neon Signs & Closet Lights (HTS 9405)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">9405.42.80</span></a>
+        <a href="/1688-bluetooth-earbuds-audio-hts-8518-tariff-calculator" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">Open-Ear Bluetooth Audio & Speakers (8518)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">8518.30.20</span></a>
+        <a href="/1688-travel-backpack-cosmetic-bag-hts-4202-tariff-guide" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">Travel Backpacks & Packing Cubes (4202.92)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">4202.92.31</span></a>
+        <a href="/1688-baby-silicone-feeding-set-hts-3924-sourcing" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">Baby Silicone Feeding Sets (HTS 3924 / CPC)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">3924.10.40</span></a>
+        <a href="/1688-wooden-montessori-toys-hts-9503-tariff-calculator" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">Wooden Montessori Toys (HTS 9503.00)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">9503.00.00</span></a>
+        <a href="/1688-microfiber-cleaning-cloth-towel-hts-6307-calculator" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">Microfiber Car Drying Towels (HTS 6307.10)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">6307.10.20</span></a>
+        <a href="/1688-beauty-jade-roller-gua-sha-hts-7116-tariff-guide" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">Gua Sha & Cryo Beauty Tools (HTS 7116.20)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">7116.20.40</span></a>
+        <a href="/1688-false-eyelashes-cosmetic-brushes-hts-9603-sourcing" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">DIY Cluster Lashes & Brushes (HTS 9603.30)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">9603.30.60</span></a>
+        <a href="/1688-camping-tent-outdoor-gear-hts-6306-tariff-calculator" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">Pop-Up Tents & Camping Gear (HTS 6306.22)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">6306.22.90</span></a>
+        <a href="/1688-pickleball-paddle-sports-hts-9506-sourcing-guide" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">T700 Carbon Pickleball Paddles (HTS 9506.59)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">9506.59.80</span></a>
+        <a href="/1688-car-dashcam-auto-accessories-hts-8525-calculator" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">4K Car Dashcams & CarPlay Screens (8525.89)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">8525.89.40</span></a>
+        <a href="/1688-jewelry-stainless-steel-ring-hts-7117-sourcing" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">PVD Gold Waterproof Jewelry (HTS 7117.19)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">7117.19.90</span></a>
+        <a href="/1688-sunglasses-blue-light-glasses-hts-9004-calculator" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">Polarized & Blue Light Glasses (HTS 9004.10)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">9004.10.00</span></a>
+        <a href="/1688-plush-toys-stuffed-animals-hts-9503-sourcing" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">Weighted Plushies & Stuffed Toys (9503.00)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">9503.00.00</span></a>
+        <a href="/1688-custom-packaging-gift-boxes-hts-4819-calculator" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">Custom Magnetic Gift Boxes (HTS 4819.20)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">4819.20.00</span></a>
+        <a href="/1688-gardening-tools-planter-pots-hts-8201-sourcing-guide" class="px-3 py-2 rounded-lg text-xs font-semibold border transition flex items-center justify-between gap-2 bg-slate-900/80 border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-white"><span class="truncate">Stainless Gardening Tools & Planters (8201)</span><span class="text-[10px] font-mono text-slate-400 shrink-0">8201.50.00</span></a>
       </div>
     </section>
-
   </main>
 
-  <!-- Compliance & Legal Footer (Required for Creem / Dodo / Stripe Merchant of Record Verification) -->
   <footer class="border-t border-slate-800/80 bg-slate-950 py-6 px-4 sm:px-6 mt-8">
-    <div class="max-w-7xl mx-auto space-y-4 text-xs text-slate-400">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pb-4 border-b border-slate-800/80">
-        <div>
-          <div class="font-bold text-slate-200 mb-1">About SinoScout™ (Operated by Nexus China Biz)</div>
-          <p class="text-slate-500 leading-relaxed">
-            SinoScout™ (operated by Nexus China Biz · nexuschinabiz.com) is an interactive supply chain intelligence web application providing USITC HTS tariff simulations, 1688 manufacturer authenticity scoring, and digital sourcing data reports for e-commerce brands.
-          </p>
-        </div>
-        <div>
-          <div class="font-bold text-slate-200 mb-1">Refund & Fulfillment Policy</div>
-          <p class="text-slate-500 leading-relaxed">
-            All SinoScout™ Pro Digital Dossiers ($29 USD) include instant database access and custom report generation within 24 hours. We offer a 14-day 100% money-back satisfaction guarantee if verified factory data cannot be matched.
-          </p>
-        </div>
-        <div>
-          <div class="font-bold text-slate-200 mb-1">Terms, Privacy & Support Contact</div>
-          <p class="text-slate-500 leading-relaxed">
-            We do not store payment card details; all transactions are processed securely via our Merchant of Record. Support & Inquiries: <a href="mailto:smartimberwolf@gmail.com" class="text-teal-400 underline">smartimberwolf@gmail.com</a> · <a href="https://github.com/smartimberwolf-coder/sinoscout" target="_blank" rel="noopener noreferrer" class="text-teal-400 underline">GitHub Documentation</a>
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-wrap items-center justify-between gap-2 text-slate-500">
-        <div>© 2026 SinoScout™ V3.2 (Operated by Nexus China Biz · nexuschinabiz.com) — US-China Cross-Border Supply Chain Intelligence</div>
-        <div><a href="/terms.html" class="text-teal-400 hover:underline">Terms of Service</a> · <a href="/privacy.html" class="text-teal-400 hover:underline">Privacy Policy</a> · <a href="/terms.html#refund" class="text-teal-400 hover:underline">14-Day Refund Guarantee</a></div>
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3 text-xs text-slate-500">
+      <div>© 2026 SinoScout™ V3.5 (Operated by Nexus China Biz · nexuschinabiz.com) · Support: smartimberwolf@gmail.com</div>
+      <div class="flex flex-wrap items-center gap-4">
+        <a href="/terms" class="hover:text-slate-300">Terms of Service</a>
+        <a href="/privacy" class="hover:text-slate-300">Privacy Policy</a>
+        <a href="/sitemap.xml" class="hover:text-slate-300">XML Sitemap</a>
+        <a href="/llms.txt" class="hover:text-slate-300">AI Knowledge (llms.txt)</a>
+        <a href="https://github.com/smartimberwolf-coder/sinoscout" target="_blank" rel="noopener noreferrer" class="hover:text-slate-300">GitHub</a>
       </div>
     </div>
   </footer>
 
-
-  <!-- Native GBK Encoding Form for 1688.com Search (Prevents UTF-8 to GBK Mojibake / 乱码) -->
-  <form id="native1688GbkForm" action="https://s.1688.com/selloffer/offer_search.htm" method="get" accept-charset="gbk" target="_blank" class="hidden">
-    <input type="hidden" name="keywords" id="native1688GbkInput" value="磁吸桌面收纳盒 源头工厂" />
-  </form>
-
   <script>
-    // ==================== STATE & PRESETS ====================
     var currentLang = 'en';
-    var CHECKOUT_URL = 'https://www.creem.io/payment/prod_5NMSi2soem8Hs8hz60ce25';
-
-    var presets = [
-      {
-        name: "Magnetic Modular Desk Organizer",
-        cnKeyword: "磁吸桌面收纳盒 源头工厂",
-        rmbPrice: 24.0,
-        aliPrice: 11.50,
-        retailPrice: 36.00,
-        htsValue: "0.114",
-        shipValue: "5.80",
-        weight: 0.45,
-        batchQty: 200,
-        channel: "tiktok",
-        industrialBelt: "Ningbo / Taizhou, Zhejiang (模具注塑产业带)",
-        badgeVal: "24",
-        licenseVal: "25",
-        repurchaseVal: "15",
-        clusterVal: "15"
-      },
-      {
-        name: "Smart Pet Grooming Vacuum Kit",
-        cnKeyword: "宠物吸毛器理发一体机 超级工厂",
-        rmbPrice: 145.0,
-        aliPrice: 46.00,
-        retailPrice: 89.00,
-        htsValue: "0.289",
-        shipValue: "2.20",
-        weight: 2.10,
-        batchQty: 150,
-        channel: "amazon",
-        industrialBelt: "Suzhou / Ningbo Small Appliances (清洁小家电产业带)",
-        badgeVal: "30",
-        licenseVal: "25",
-        repurchaseVal: "15",
-        clusterVal: "15"
-      },
-      {
-        name: "Custom Acrylic LED Neon Sign",
-        cnKeyword: "LED柔性霓虹灯牌 亚克力定制工厂",
-        rmbPrice: 38.0,
-        aliPrice: 18.50,
-        retailPrice: 49.00,
-        htsValue: "0.102",
-        shipValue: "9.50",
-        weight: 0.65,
-        batchQty: 100,
-        channel: "etsy",
-        industrialBelt: "Shenzhen / Zhongshan Lighting (中山深圳灯饰产业带)",
-        badgeVal: "24",
-        licenseVal: "25",
-        repurchaseVal: "10",
-        clusterVal: "15"
-      },
-      {
-        name: "Portable USB-C Espresso Maker",
-        cnKeyword: "便携式意式咖啡机 车载电动源头厂家",
-        rmbPrice: 88.0,
-        aliPrice: 31.00,
-        retailPrice: 64.00,
-        htsValue: "0.289",
-        shipValue: "5.80",
-        weight: 0.75,
-        batchQty: 200,
-        channel: "shopify",
-        industrialBelt: "Shunde / Zhongshan, Guangdong (顺德小家电产业带)",
-        badgeVal: "30",
-        licenseVal: "25",
-        repurchaseVal: "15",
-        clusterVal: "15"
-      }
+    var autoDict = [
+      { k: ['smart ring', 'ring', 'wearable', 'watch', 'fitness'], cn: '智能健康戒指 心率睡眠监测 私模源头工厂', belt: "Shenzhen Bao'an & Nanshan (深圳智能穿戴产业带)", hts: '0.075' },
+      { k: ['magsafe', 'charger', 'wireless', 'phone case', 'power'], cn: '三合一折叠磁吸无线充 Qi2认证 深圳源头工厂', belt: "Shenzhen Bao'an / Dongguan (深圳东莞3C磁吸产业带)", hts: '0.250' },
+      { k: ['gym', 'legging', 'yoga', 'activewear', 'apparel'], cn: '无缝瑜伽裤 裸感蜜桃臀健身套装 源头工厂', belt: 'Yiwu / Quanzhou Santoni Knitting Belt (义乌/泉州无缝针织产业带)', hts: '0.357' },
+      { k: ['silicone', 'mat', 'baby', 'plate', 'kitchen'], cn: '食品级铂金硅胶沥水垫 母婴餐盘 东莞源头工厂', belt: 'Dongguan / Yangjiang Silicone Belt (东莞/阳江铂金硅胶产业带)', hts: '0.109' },
+      { k: ['tumbler', 'bottle', 'flask', 'cup'], cn: '40oz不锈钢保温杯 磁吸支架杯 永康源头工厂', belt: 'Yongkang, Zhejiang (浙江永康保温杯五金产业带)', hts: '0.147' },
+      { k: ['espresso', 'coffee', 'kettle'], cn: '便携式意式咖啡机 车载电动 顺德源头厂家', belt: 'Shunde, Guangdong (广东顺德小家电产业带)', hts: '0.112' },
+      { k: ['pet', 'vacuum', 'scrubber'], cn: '宠物吸毛器理发一体机 超级工厂', belt: 'Suzhou / Cixi Small Appliance Belt (苏州/慈溪清洁电器产业带)', hts: '0.289' },
+      { k: ['neon', 'led', 'lamp', 'light'], cn: 'LED柔性霓虹灯牌 磁吸感应灯 中山源头工厂', belt: 'Zhongshan Guzhen / Shenzhen (中山古镇/深圳灯饰产业带)', hts: '0.102' }
     ];
 
-    var i18nDict = {
-      en: {
-        badge_v1: "US-China Sourcing SaaS V3.2 · By Nexus China Biz",
-        subtitle: "1688 True Factory Verifier + USITC HTS Landed Cost & Margin Simulator",
-        fx_label: "USD/CNH:",
-        header_cta: "Unlock $29 Pro Dossier →",
-        tab_calc: "HTS Landed Cost & Margin Calculator",
-        tab_verifier: "1688 True Factory Verifier (Anti-Middleman)",
-        tab_samples: "Viral Teardown Case Library (4 Presets)",
-        tab_audit: "$29 Custom Sourcing Audit & Partner Hub",
-        preset_badge: "Instant Demo",
-        preset_prompt: "Load a real US-China viral product teardown into the engine:",
-        calc_title: "1688 EXW to US Doorstep Landed Cost Parameters",
-        calc_desc: "Compare 1688 direct factory sourcing against AliExpress middlemen and US POD fulfillment.",
-        btn_reset: "Reset Defaults",
-        lbl_prod_name: "Product Name / SKU",
-        lbl_cn_kw: "1688 Chinese Factory Keyword (Copyable)",
-        btn_copy: "Copy",
-        lbl_1688_rmb: "1688 Factory Price (¥ RMB)",
-        lbl_ali_usd: "AliExpress / Middleman ($ USD)",
-        lbl_ali_sub: "Typical English wholesale price",
-        lbl_retail_usd: "Target US Retail Price ($ USD)",
-        lbl_retail_sub: "TikTok Shop / Amazon / Etsy",
-        lbl_hts_cat: "USITC HTS Category (Base Duty + Section 301 China Tariff)",
-        lbl_ship_mode: "Cross-Border Freight Mode (per kg landed)",
-        lbl_weight: "Unit Weight (kg, incl. box)",
-        lbl_moq: "Order Batch Qty (Units)",
-        lbl_channel: "US Sales Channel Fee + US Fulfillment",
-        res_header: "Unit Economics & Arbitrage Verdict",
-        kpi_net_profit: "1688 Direct Net Profit / Unit",
-        kpi_margin: "Net Margin:",
-        kpi_roi: "Inventory ROI:",
-        wf_title: "Cost Component Breakdown (Per Unit)",
-        wf_exw: "1. 1688 Factory EXW Price + CN Domestic (¥2.5)",
-        wf_freight: "2. Cross-Border Freight + 3PL Inspection",
-        wf_duty: "3. US Customs HTS Duty + Sec. 301 Tariff",
-        wf_landed: "Total US Warehouse Landed Cost",
-        wf_channel: "4. US Marketplace Commission + Local Fulfillment",
-        cmp_title: "Why Bypassing AliExpress / Middlemen Matters",
-        bar_1688: "1688 Direct Sourcing Net Margin",
-        bar_ali: "AliExpress / US Dropship Middleman Margin",
-        cta_audit_btn: "Unlock 3 Verified 1688 Factories & HTS Dossier ($29) →",
-        ver_title: "1688 True Factory vs. Trading Middleman Scorer",
-        ver_desc: "70% of suppliers on 1688 & Alibaba are trading companies marking up prices 25%–45%. Enter the supplier's profile signals below to run our proprietary verification check.",
-        ver_score_header: "Factory Authenticity Score",
-        script_title: "Ready-to-Send 1688 AliWangWang / WeChat Factory Script (Insider Chinese)",
-        script_hint: "Never open with English or say you buy 1 piece—factories will quote retail prices. Copy this native B2B procurement message:",
-        lib_title: "Curated US-China Supply Chain Arbitrage Case Studies",
-        lib_desc: "Click any case below to load its exact 1688 factory cost, HTS duty code, and weight parameters into the calculator.",
-        audit_title: "1688 Verified Factory Database Export & Custom HTS Landed Cost Dossier",
-        aff_title: "Recommended Cross-Border Fulfillment & Payment Stack"
-      },
-      zh: {
-        badge_v1: "中美供应链套利引擎 V3.2 · Nexus China Biz 出品",
-        subtitle: "1688 真源头工厂鉴别算法 + 美国 USITC HTS 关税到岸毛利测算系统",
-        fx_label: "实时汇率:",
-        header_cta: "解锁 $29 Pro 寻源数据包 →",
-        tab_calc: "HTS 关税到岸成本与毛利计算器",
-        tab_verifier: "1688 真假源头工厂鉴别器 (防二道贩子)",
-        tab_samples: "中美爆品供应链拆解样本库 (4大预设)",
-        tab_audit: "$29 Pro 数据报告 & 联盟分润中心",
-        preset_badge: "一键演示",
-        preset_prompt: "点击下方真实跨国爆品案例，自动载入 1688 出厂价、HTS 税率与重量参数：",
-        calc_title: "1688 出厂价 (EXW) 到美国仓库到岸成本参数",
-        calc_desc: "直观对比 1688 源头工厂直采与速卖通 (AliExpress) 中间商的毛利差额，帮欧美卖家算清省下的真金白银。",
-        btn_reset: "恢复默认",
-        lbl_prod_name: "选品英文名称 / SKU",
-        lbl_cn_kw: "1688 源头产业带精准搜索词 (可一键复制)",
-        btn_copy: "复制搜索词",
-        lbl_1688_rmb: "1688 源头出厂价 (¥ 人民币)",
-        lbl_ali_usd: "速卖通 / 英文批发站拿货价 ($ 美元)",
-        lbl_ali_sub: "欧美卖家常付的中间商溢价",
-        lbl_retail_usd: "美国终端零售价 ($ 美元)",
-        lbl_retail_sub: "TikTok Shop / 亚马逊 / Etsy 售价",
-        lbl_hts_cat: "美国海关 HTS 税则编码 (基础关税 + 301条款加征)",
-        lbl_ship_mode: "中美跨境头程物流方式 (按公斤包税到门)",
-        lbl_weight: "单件含包装重量 (kg)",
-        lbl_moq: "首单采购批次数量 (件)",
-        lbl_channel: "美区销售平台佣金 + 本土尾程派送费",
-        res_header: "单品经济模型与跨国套利结论",
-        kpi_net_profit: "1688 直采单件净利润",
-        kpi_margin: "净利率:",
-        kpi_roi: "批次资金回报率 (ROI):",
-        wf_title: "单件到岸成本全链路拆解",
-        wf_exw: "1. 1688 出厂价 + 国内义乌/深圳集运仓运费 (¥2.5)",
-        wf_freight: "2. 中美跨境头程运费 + 3PL 质检贴标费",
-        wf_duty: "3. 美国海关 HTS 基础关税 + 301 条款加征",
-        wf_landed: "运抵美国仓库总到岸成本 (Landed Cost)",
-        wf_channel: "4. 美区平台交易佣金 + 本土尾程履约费",
-        cmp_title: "为什么要绕开速卖通中间商直连 1688？",
-        bar_1688: "1688 源头直采净利率",
-        bar_ali: "速卖通 / 英文批发站拿货净利率",
-        cta_audit_btn: "引导客户下单：解锁 3 家 1688 真工厂数据与 HTS 报告 ($29) →",
-        ver_title: "1688 真源头工厂 vs. 贸易商二道贩子评分器",
-        ver_desc: "1688 上约 70% 的店铺是贸易公司或一件代发中间商。通过以下 6 大国内产业带硬指标自动测算真工厂得分：",
-        ver_score_header: "源头工厂真实度评分",
-        script_title: "自动生成的 1688 阿里旺旺 / 微信内行询盘话术 (防报高价)",
-        script_hint: "老外直接发英文或说买1件会被当成散客宰。工具自动生成专业跨境大B采购话术供买家复制：",
-        lib_title: "内置中美供应链差价爆品样本库",
-        lib_desc: "点击任意样本卡片，即可将其 1688 出厂价、HTS 海关编码和验厂参数一键载入计算器。",
-        audit_title: "$29 专业版授权：1688 源头工厂核验数据库与到岸利润报告",
-        aff_title: "后端供应链履约与跨境支付返佣矩阵 (第三层护城河)"
-      }
-    };
+    var presets = [
+      { name: 'Magnetic Modular Desk Organizer', cnKeyword: '磁吸桌面收纳盒 源头工厂', rmbPrice: 24.0, aliPrice: 11.50, retailPrice: 36.00, htsValue: '0.114', shipValue: '5.80', weight: 0.45, batchQty: 200, channel: 'tiktok', belt: 'Ningbo / Taizhou, Zhejiang (模具注塑产业带)' },
+      { name: 'Smart Health Ring (BLE Titanium)', cnKeyword: '智能健康戒指 心率睡眠监测 私模源头工厂', rmbPrice: 85.0, aliPrice: 33.00, retailPrice: 79.00, htsValue: '0.075', shipValue: '5.80', weight: 0.22, batchQty: 200, channel: 'shopify', belt: "Shenzhen Bao'an, Guangdong (深圳智能穿戴产业带)" },
+      { name: 'Foldable 3-in-1 MagSafe Charger', cnKeyword: '三合一折叠磁吸无线充 Qi2认证 深圳源头工厂', rmbPrice: 32.0, aliPrice: 13.80, retailPrice: 29.99, htsValue: '0.250', shipValue: '5.80', weight: 0.22, batchQty: 200, channel: 'tiktok', belt: "Shenzhen Bao'an / Dongguan (深圳3C磁吸产业带)" },
+      { name: 'Portable USB-C Espresso Maker', cnKeyword: '便携式意式咖啡机 车载电动源头厂家', rmbPrice: 88.0, aliPrice: 31.00, retailPrice: 64.00, htsValue: '0.112', shipValue: '5.80', weight: 0.75, batchQty: 200, channel: 'amazon', belt: 'Shunde / Zhongshan, Guangdong (顺德小家电产业带)' }
+    ];
 
-    // ==================== HELPER FUNCTIONS ====================
     function showToast(msg) {
-      var container = document.getElementById('toastContainer');
-      var textEl = document.getElementById('toastMessage');
-      textEl.textContent = msg;
-      container.classList.remove('hidden');
-      if (window._toastTimer) clearTimeout(window._toastTimer);
-      window._toastTimer = setTimeout(function () {
-        container.classList.add('hidden');
-      }, 2600);
-    }
-
-    function copyTextToClipboard(text, successMsg) {
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text).then(function () {
-          showToast(successMsg);
-        }).catch(function () {
-          fallbackCopy(text, successMsg);
-        });
-      } else {
-        fallbackCopy(text, successMsg);
-      }
-    }
-
-    function fallbackCopy(text, successMsg) {
-      var ta = document.createElement('textarea');
-      ta.value = text;
-      ta.style.position = 'fixed';
-      ta.style.left = '-9999px';
-      document.body.appendChild(ta);
-      ta.select();
-      try {
-        document.execCommand('copy');
-        showToast(successMsg);
-      } catch (e) {
-        showToast('Copy completed');
-      }
-      document.body.removeChild(ta);
+      var c = document.getElementById('toastContainer');
+      document.getElementById('toastMessage').textContent = msg;
+      c.classList.remove('hidden');
+      clearTimeout(window._t);
+      window._t = setTimeout(function() { c.classList.add('hidden'); }, 2400);
     }
 
     function switchTab(tabId) {
@@ -994,315 +513,111 @@
       var target = document.getElementById('view-' + tabId);
       if (target) {
         target.classList.remove('hidden');
-        if (tabId !== 'samples') {
-          target.classList.add('grid');
-        }
+        if (tabId !== 'samples') target.classList.add('grid');
       }
-
       var btns = document.querySelectorAll('.nav-tab-btn');
       for (var j = 0; j < btns.length; j++) {
-        var b = btns[j];
-        if (b.getAttribute('data-tab') === tabId) {
-          b.classList.add('tab-btn-active');
-          b.classList.remove('bg-slate-900/70', 'text-slate-300');
+        if (btns[j].getAttribute('data-tab') === tabId) {
+          btns[j].classList.add('tab-btn-active');
+          btns[j].classList.remove('bg-slate-900/70', 'text-slate-300');
         } else {
-          b.classList.remove('tab-btn-active');
-          b.classList.add('bg-slate-900/70', 'text-slate-300');
+          btns[j].classList.remove('tab-btn-active');
+          btns[j].classList.add('bg-slate-900/70', 'text-slate-300');
         }
       }
     }
 
-    // ==================== CALCULATOR ENGINE ====================
     function recalculateEconomics() {
-      var fx = parseFloat(document.getElementById('fxRateInput').value) || 6.69;
-      var rmbPrice = parseFloat(document.getElementById('rmbPriceInput').value) || 24;
-      var aliPrice = parseFloat(document.getElementById('aliPriceInput').value) || 11.5;
-      var retailPrice = parseFloat(document.getElementById('retailPriceInput').value) || 36;
-      var weight = parseFloat(document.getElementById('unitWeightInput').value) || 0.45;
-      var batchQty = parseInt(document.getElementById('batchQtyInput').value, 10) || 200;
+      var fx = parseFloat(document.getElementById('fxRateInput').value) || 6.67;
+      var rmb = parseFloat(document.getElementById('rmbPriceInput').value) || 24;
+      var ali = parseFloat(document.getElementById('aliPriceInput').value) || 11.5;
+      var retail = parseFloat(document.getElementById('retailPriceInput').value) || 36;
+      var wt = parseFloat(document.getElementById('unitWeightInput').value) || 0.45;
+      var qty = parseInt(document.getElementById('batchQtyInput').value, 10) || 200;
 
-      var htsSelect = document.getElementById('htsCategorySelect');
-      var customHtsInput = document.getElementById('customHtsRateInput');
-      var htsOption = htsSelect.options[htsSelect.selectedIndex];
-      var htsCode = htsOption ? htsOption.getAttribute('data-code') : '3926.10.00';
-      var htsRate = 0.114;
-      if (htsSelect.value === 'custom') {
-        if (customHtsInput) customHtsInput.classList.remove('hidden');
-        htsRate = (parseFloat(customHtsInput ? customHtsInput.value : 15) || 0) / 100.0;
-      } else {
-        if (customHtsInput) customHtsInput.classList.add('hidden');
-        htsRate = parseFloat(htsSelect.value) || 0.114;
-      }
+      var htsSel = document.getElementById('htsCategorySelect');
+      var htsRate = parseFloat(htsSel.value) || 0.114;
+      var htsCode = htsSel.options[htsSel.selectedIndex].getAttribute('data-code') || '3926.10.00';
+      var shipRate = parseFloat(document.getElementById('shippingModeSelect').value) || 5.80;
 
-      var shipRatePerKg = parseFloat(document.getElementById('shippingModeSelect').value) || 5.80;
+      var chSel = document.getElementById('salesChannelSelect');
+      var chOpt = chSel.options[chSel.selectedIndex];
+      var comm = parseFloat(chOpt.getAttribute('data-comm')) || 0.08;
+      var fulfill = parseFloat(chOpt.getAttribute('data-fulfill')) || 4.25;
 
-      var channelSelect = document.getElementById('salesChannelSelect');
-      var chOption = channelSelect.options[channelSelect.selectedIndex];
-      var commRate = parseFloat(chOption.getAttribute('data-comm')) || 0.08;
-      var fulfillFee = parseFloat(chOption.getAttribute('data-fulfill')) || 4.25;
+      var exwOnly = rmb / fx;
+      var exwPlusCn = (rmb + 2.5) / fx;
+      var freight = (wt * shipRate) + 0.20;
+      var duty = exwOnly * htsRate;
+      var landed = exwPlusCn + freight + duty;
+      var chFee = (retail * comm) + fulfill;
 
-      // 1. Factory EXW in USD + China domestic freight (¥2.5 RMB per unit average)
-      var exwUsdOnly = rmbPrice / fx;
-      var exwPlusCnDomesticUsd = (rmbPrice + 2.5) / fx;
+      var net1688 = retail - landed - chFee;
+      var m1688 = retail > 0 ? (net1688 / retail) * 100 : 0;
+      var batchProfit = net1688 * qty;
+      var roi = (landed * qty) > 0 ? (batchProfit / (landed * qty)) * 100 : 0;
 
-      // 2. Cross-border freight + $0.20 3PL QC & FNSKU labeling fee
-      var freightUsd = (weight * shipRatePerKg) + 0.20;
+      var netAli = retail - (ali + 2.50) - chFee;
+      var mAli = retail > 0 ? (netAli / retail) * 100 : 0;
+      var extra = Math.max(0, (net1688 - netAli) * qty);
 
-      // 3. USITC HTS Duty + Section 301 on declared factory value
-      var dutyUsd = exwUsdOnly * htsRate;
-
-      // Total Landed Cost at US warehouse
-      var landedCostUsd = exwPlusCnDomesticUsd + freightUsd + dutyUsd;
-
-      // 4. US Marketplace Commission + Local Fulfillment
-      var channelTotalFee = (retailPrice * commRate) + fulfillFee;
-
-      // Net Profit (1688 Direct)
-      var netProfit1688 = retailPrice - landedCostUsd - channelTotalFee;
-      var netMargin1688 = retailPrice > 0 ? (netProfit1688 / retailPrice) * 100 : 0;
-
-      // Batch Profit & ROI
-      var batchNetProfit = netProfit1688 * batchQty;
-      var totalBatchInventoryCost = landedCostUsd * batchQty;
-      var batchRoi = totalBatchInventoryCost > 0 ? (batchNetProfit / totalBatchInventoryCost) * 100 : 0;
-
-      // Compare vs AliExpress / Middleman (assuming AliExpress price includes basic packet shipping or $2.50 ePacket)
-      var aliLandedCost = aliPrice + 2.50;
-      var netProfitAli = retailPrice - aliLandedCost - channelTotalFee;
-      var netMarginAli = retailPrice > 0 ? (netProfitAli / retailPrice) * 100 : 0;
-      var extraBatchProfit = Math.max(0, (netProfit1688 - netProfitAli) * batchQty);
-
-      // Update DOM
-      document.getElementById('usdFactoryEquiv').textContent = '$' + exwUsdOnly.toFixed(2);
+      document.getElementById('usdFactoryEquiv').textContent = '$' + exwOnly.toFixed(2);
       document.getElementById('htsBadgeDisplay').textContent = 'HTS ' + htsCode + ' · ' + (htsRate * 100).toFixed(1) + '% Duty';
+      document.getElementById('netProfitPerUnit').textContent = (net1688 >= 0 ? '$' : '-$') + Math.abs(net1688).toFixed(2);
+      document.getElementById('netMarginPct').textContent = m1688.toFixed(1) + '%';
+      document.getElementById('batchQtyLabel').textContent = qty;
+      document.getElementById('totalBatchProfit').textContent = (batchProfit >= 0 ? '$' : '-$') + Math.abs(Math.round(batchProfit)).toLocaleString();
+      document.getElementById('batchRoiPct').textContent = Math.round(roi) + '%';
 
-      document.getElementById('netProfitPerUnit').textContent = (netProfit1688 >= 0 ? '$' : '-$') + Math.abs(netProfit1688).toFixed(2);
-      document.getElementById('netMarginPct').textContent = netMargin1688.toFixed(1) + '%';
-      document.getElementById('batchQtyLabel').textContent = batchQty;
-      document.getElementById('totalBatchProfit').textContent = (batchNetProfit >= 0 ? '$' : '-$') + Math.abs(Math.round(batchNetProfit)).toLocaleString();
-      document.getElementById('batchRoiPct').textContent = Math.round(batchRoi) + '%';
+      document.getElementById('wfExwUsd').textContent = '$' + exwPlusCn.toFixed(2);
+      document.getElementById('wfFreightUsd').textContent = '$' + freight.toFixed(2);
+      document.getElementById('wfDutyUsd').textContent = '$' + duty.toFixed(2);
+      document.getElementById('wfLandedTotal').textContent = '$' + landed.toFixed(2);
+      document.getElementById('wfChannelFee').textContent = '$' + chFee.toFixed(2);
 
-      document.getElementById('wfExwUsd').textContent = '$' + exwPlusCnDomesticUsd.toFixed(2);
-      document.getElementById('wfFreightUsd').textContent = '$' + freightUsd.toFixed(2);
-      document.getElementById('wfDutyUsd').textContent = '$' + dutyUsd.toFixed(2);
-      document.getElementById('wfLandedTotal').textContent = '$' + landedCostUsd.toFixed(2);
-      document.getElementById('wfChannelFee').textContent = '$' + channelTotalFee.toFixed(2);
+      document.getElementById('savingsBadge').textContent = '+$' + Math.round(extra).toLocaleString() + ' Extra Profit / Batch';
+      document.getElementById('bar1688Label').textContent = '$' + net1688.toFixed(2) + ' / unit (' + m1688.toFixed(1) + '%)';
+      document.getElementById('barAliLabel').textContent = '$' + netAli.toFixed(2) + ' / unit (' + mAli.toFixed(1) + '%)';
+      document.getElementById('bar1688Fill').style.width = Math.max(5, Math.min(100, m1688)) + '%';
+      document.getElementById('barAliFill').style.width = Math.max(5, Math.min(100, mAli)) + '%';
 
-      document.getElementById('savingsBadge').textContent = '+$' + Math.round(extraBatchProfit).toLocaleString() + (currentLang === 'zh' ? ' 批次多赚利润' : ' Extra Profit / Batch');
-      document.getElementById('bar1688Label').textContent = '$' + netProfit1688.toFixed(2) + ' / unit (' + netMargin1688.toFixed(1) + '%)';
-      document.getElementById('barAliLabel').textContent = '$' + netProfitAli.toFixed(2) + ' / unit (' + netMarginAli.toFixed(1) + '%)';
-
-      var w1688 = Math.max(5, Math.min(100, netMargin1688));
-      var wAli = Math.max(5, Math.min(100, netMarginAli));
-      document.getElementById('bar1688Fill').style.width = w1688 + '%';
-      document.getElementById('barAliFill').style.width = wAli + '%';
-
-      updateNegotiationScript();
+      var kw = document.getElementById('cnKeywordInput').value || '源头工厂';
+      document.getElementById('negotiationScriptBox').value = '王总您好，我们是做北美亚马逊与TikTok跨境专供的采购团队，看到贵厂的【' + kw + '】，想先拿3个样品看下做工材质。若测评达标，首单预计' + qty + '件起订（按月返单），请问支持定制Logo和彩盒吗？请发梯度EXW不含税报价单及外箱体积重量参数，谢谢！';
     }
 
-    // ==================== 1688 FACTORY VERIFIER ENGINE ====================
     function recalculateVerifier() {
-      var s1 = parseInt(document.getElementById('verBadgeSelect').value, 10) || 0;
-      var s2 = parseInt(document.getElementById('verLicenseSelect').value, 10) || 0;
-      var s3 = parseInt(document.getElementById('verRepurchaseSelect').value, 10) || 0;
-      var s4 = parseInt(document.getElementById('verClusterSelect').value, 10) || 0;
-      var s5 = parseInt(document.getElementById('verSkuSelect').value, 10) || 0;
-      var s6 = parseInt(document.getElementById('verCustomSelect').value, 10) || 0;
-
-      var total = Math.min(100, s1 + s2 + s3 + s4 + s5 + s6);
-      var scoreEl = document.getElementById('verTotalScore');
-      var badgeEl = document.getElementById('verTierBadge');
-      var titleEl = document.getElementById('verVerdictTitle');
-      var adviceEl = document.getElementById('verVerdictAdvice');
-
-      scoreEl.textContent = total;
-
+      var els = document.querySelectorAll('.ver-input');
+      var total = 0;
+      for (var i = 0; i < els.length; i++) total += parseInt(els[i].value, 10) || 0;
+      total = Math.min(100, total);
+      document.getElementById('verTotalScore').textContent = total;
+      var badge = document.getElementById('verTierBadge');
+      var title = document.getElementById('verVerdictTitle');
+      var adv = document.getElementById('verVerdictAdvice');
       if (total >= 80) {
-        badgeEl.textContent = currentLang === 'zh' ? 'T1 认证源头工厂' : 'Tier-1 Verified Direct Factory';
-        badgeEl.className = 'px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40';
-        titleEl.textContent = currentLang === 'zh' ? '高确定性源头生产厂家 (真工厂)' : 'High-Confidence Source Manufacturer (真源头工厂)';
-        adviceEl.textContent = currentLang === 'zh'
-          ? '该供应商具备生产加工资质且位于核心产业带，回头率高。可直接索取样品并在 1688 标价基础上谈判 8%–12% 的阶梯降价。'
-          : 'This supplier holds manufacturing registration and sits inside the primary industrial belt. Safe to request sample customization and negotiate 8%–12% off listed 1688 tier-1 pricing.';
+        badge.textContent = 'Tier-1 Verified Direct Factory';
+        badge.className = 'px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40';
+        title.textContent = 'High-Confidence Source Manufacturer (真源头工厂)';
+        adv.textContent = 'Holds manufacturing registration inside primary industrial cluster. Safe for private-label & 8%–12% tier-1 EXW negotiation.';
       } else if (total >= 55) {
-        badgeEl.textContent = currentLang === 'zh' ? 'T2 工贸一体 / 实力批发商' : 'Tier-2 Hybrid Factory / Wholesaler';
-        badgeEl.className = 'px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40';
-        titleEl.textContent = currentLang === 'zh' ? '疑似工贸一体或大型包销贸易商' : 'Hybrid Workshop or Authorized Distributor';
-        adviceEl.textContent = currentLang === 'zh'
-          ? '适合小批量现货测款（50–100件），但若要开模定制或下 500 件以上大单，建议通过视频验厂确认其是否有自有注塑/组装车间。'
-          : 'Acceptable for small spot-inventory tests (50–100 units), but request a live workshop video call before placing custom private-label orders above 500 units.';
+        badge.textContent = 'Tier-2 Hybrid Workshop / Wholesaler';
+        badge.className = 'px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40';
+        title.textContent = 'Hybrid Workshop or Authorized Distributor';
+        adv.textContent = 'Acceptable for 50–100 unit spot tests, but request a live workshop video call before custom mold orders.';
       } else {
-        badgeEl.textContent = currentLang === 'zh' ? '高风险：二道贩子贸易商' : 'High Risk: Trading Middleman';
-        badgeEl.className = 'px-2.5 py-0.5 rounded-full text-xs font-bold bg-rose-500/20 text-rose-300 border border-rose-500/40';
-        titleEl.textContent = currentLang === 'zh' ? '典型贸易公司 / 一件代发二道贩子 (建议绕开)' : 'Trading Company Markup Alert (Avoid for Bulk)';
-        adviceEl.textContent = currentLang === 'zh'
-          ? '该店铺经营范围不含生产加工或杂货铺式铺货，通常加价 25%–45% 转卖。请使用我们的 1688 源头产业带关键词重新检索真工厂。'
-          : 'Profile matches a pure reseller marking up factory goods by 25%–45%. Use our Chinese industrial belt keyword or unlock the $29 Pro Dossier to locate the actual manufacturer.';
+        badge.textContent = 'High Risk: Trading Middleman';
+        badge.className = 'px-2.5 py-0.5 rounded-full text-xs font-bold bg-rose-500/20 text-rose-300 border border-rose-500/40';
+        title.textContent = 'Trading Company Markup Alert (二道贩子)';
+        adv.textContent = 'Profile matches a reseller marking up factory goods 25%–45%. Filter by 生产/加工 in primary industrial belt.';
       }
     }
 
-    // V3.2 All-Category English-to-1688 Industrial Belt & Keyword Auto-Translator
-    var categoryAutoRules = [
-      { keys: ['phone case', 'magsafe', 'iphone', 'earbud', 'airpod', 'charger', 'power bank', 'cable', 'screen protector'], cn: '磁吸手机壳 3C数码配件 源头工厂', belt: 'Shenzhen Huaqiangbei / Dongguan, Guangdong (深圳东莞3C数码产业带)', hts: '0.128' },
-      { keys: ['tumbler', 'water bottle', 'thermos', 'flask', 'mug', 'cup', 'stanley', 'insulated'], cn: '不锈钢保温杯 车载冰霸杯 源头工厂', belt: 'Yongkang / Wuyi, Zhejiang (浙江永康五金保温杯产业带)', hts: '0.147' },
-      { keys: ['baby', 'silicone', 'bib', 'teether', 'pacifier', 'feeding', 'toddler'], cn: '食品级硅胶母婴用品 宝宝辅食碗 源头工厂', belt: 'Dongguan / Shenzhen Silicone Cluster (东莞硅胶母婴制品产业带)', hts: '0.114' },
-      { keys: ['beauty', 'red light', 'gua sha', 'facial', 'massager', 'massage gun', 'hair curler', 'derma', 'skincare'], cn: '美容仪 红光导入仪 个人护理源头工厂', belt: 'Shenzhen / Zhongshan Beauty Appliances (深圳美容器械产业带)', hts: '0.275' },
-      { keys: ['yoga', 'fitness', 'pilates', 'resistance band', 'dumbbell', 'gym', 'workout', 'posture'], cn: '瑜伽垫 普拉提健身器材 源头工厂', belt: 'Yiwu / Nantong Fitness Gear Cluster (江苏南通/义乌健身器材产业带)', hts: '0.121' },
-      { keys: ['pet', 'dog', 'cat', 'grooming', 'litter', 'leash', 'collar', 'bark', 'feeder'], cn: '宠物用品 智能喂食器牵引绳 源头工厂', belt: 'Suzhou / Wenzhou Pet Supplies Cluster (苏州小家电/温州宠物用品产业带)', hts: '0.289' },
-      { keys: ['neon', 'led', 'lamp', 'night light', 'strip light', 'chandelier', 'sconce', 'projector'], cn: 'LED氛围灯 柔性霓虹灯牌 源头厂家', belt: 'Zhongshan Guzhen / Shenzhen Lighting (广东中山古镇灯饰产业带)', hts: '0.102' },
-      { keys: ['coffee', 'espresso', 'blender', 'juicer', 'air fryer', 'kettle', 'toaster', 'kitchen', 'grinder'], cn: '便携咖啡机 厨房小家电 源头超级工厂', belt: 'Shunde / Zhongshan Small Appliances (广东顺德厨房小家电产业带)', hts: '0.289' },
-      { keys: ['bag', 'backpack', 'tote', 'wallet', 'pouch', 'luggage', 'makeup bag', 'duffel', 'purse'], cn: '跨境爆款收纳包 双肩包箱包 源头工厂', belt: 'Guangzhou Shiling / Baigou Luggage Belt (广州狮岭/白沟箱包产业带)', hts: '0.195' },
-      { keys: ['jewelry', 'necklace', 'earring', 'bracelet', 'ring', 'pendant', 'hair claw', 'claw clip', 'sunglasses'], cn: '钛钢镀金首饰 抓夹配饰 源头工厂', belt: 'Yiwu / Qingdao Fashion Jewelry Belt (浙江义乌/山东青岛饰品产业带)', hts: '0.185' },
-      { keys: ['camping', 'tent', 'hammock', 'flashlight', 'lantern', 'fishing', 'hiking', 'outdoor', 'folding chair'], cn: '户外露营装备 折叠椅帐篷 源头工厂', belt: 'Ningbo / Yongkang Outdoor Gear Belt (浙江宁波/永康户外露营产业带)', hts: '0.121' },
-      { keys: ['toy', 'plush', 'puzzle', 'board game', 'fidget', 'building block', 'rc car', 'doll'], cn: '跨境益智玩具 毛绒公仔 源头工厂', belt: 'Shantou Chenghai / Yiwu Toy Cluster (广东汕头澄海玩具产业带)', hts: '0.075' },
-      { keys: ['shirt', 'hoodie', 'leggings', 'dress', 'socks', 'hat', 'beanie', 'shapewear', 'activewear', 'jacket'], cn: '跨境无缝瑜伽服 潮流卫衣 源头服装厂', belt: 'Guangzhou Shisanhang / Yiwu Seamless Apparel (广州/义乌无缝服装产业带)', hts: '0.240' },
-      { keys: ['desk', 'organizer', 'acrylic', 'storage', 'shelf', 'drawer', 'holder', 'stand', 'rack', 'hook'], cn: '磁吸桌面收纳盒 亚克力家居 源头工厂', belt: 'Ningbo / Taizhou Mold & Plastics (浙江宁波/台州模具注塑产业带)', hts: '0.114' }
-    ];
-
-    var wordRootDict = {
-      'magnetic': '磁吸', 'modular': '模块化', 'desk': '桌面', 'organizer': '收纳盒',
-      'portable': '便携式', 'wireless': '无线', 'electric': '电动', 'smart': '智能',
-      'stainless': '不锈钢', 'steel': '钢制', 'silicone': '硅胶', 'acrylic': '亚克力',
-      'wooden': '实木', 'bamboo': '竹制', 'leather': '真皮', 'waterproof': '防水',
-      'foldable': '可折叠', 'mini': '迷你', 'travel': '旅行', 'car': '车载',
-      'holder': '支架', 'stand': '底座', 'cleaner': '清洁器', 'brush': '清洁刷',
-      'mat': '垫子', 'box': '收纳箱', 'bottle': '水杯', 'fan': '风扇', 'heater': '取暖器',
-      'camera': '摄像头', 'keyboard': '机械键盘', 'mouse': '鼠标', 'headphone': '蓝牙耳机'
-    };
-
-    var _cloudTransTimer = null;
-    function autoTranslateProductTo1688(rawName) {
-      var text = (rawName || '').toLowerCase().trim();
-      if (!text) return;
-      var compact = text.replace(/[\s\-_]+/g, '');
-
-      // Specific high-frequency compound & exact matches first
-      if (compact.indexOf('powerbank') !== -1 || text.indexOf('power bank') !== -1 || compact.indexOf('magsafebattery') !== -1) {
-        document.getElementById('cnKeywordInput').value = '移动电源 磁吸充电宝 源头工厂';
-        var bEl = document.getElementById('matchedBeltDisplay');
-        if (bEl) bEl.textContent = 'Shenzhen Longhua / Dongguan 3C Battery Cluster (深圳龙华/东莞移动电源产业带)';
-        var hEl = document.getElementById('htsCategorySelect');
-        if (hEl && hEl.value !== 'custom') hEl.value = '0.128';
-        return;
-      }
-
-      for (var i = 0; i < categoryAutoRules.length; i++) {
-        var rule = categoryAutoRules[i];
-        for (var j = 0; j < rule.keys.length; j++) {
-          var keyCompact = rule.keys[j].replace(/[\s\-_]+/g, '');
-          if (text.indexOf(rule.keys[j]) !== -1 || compact.indexOf(keyCompact) !== -1) {
-            document.getElementById('cnKeywordInput').value = rule.cn;
-            var beltEl = document.getElementById('matchedBeltDisplay');
-            if (beltEl) beltEl.textContent = rule.belt;
-            var htsSel = document.getElementById('htsCategorySelect');
-            if (htsSel && htsSel.value !== 'custom') {
-              htsSel.value = rule.hts;
-            }
-            return;
-          }
-        }
-      }
-
-      // Token-level local synthesis
-      var tokens = text.replace(/[^a-z0-9\s]/g, ' ').split(/\s+/);
-      var cnParts = [];
-      for (var k = 0; k < tokens.length; k++) {
-        if (wordRootDict[tokens[k]]) {
-          cnParts.push(wordRootDict[tokens[k]]);
-        }
-      }
-      if (cnParts.length > 0) {
-        document.getElementById('cnKeywordInput').value = cnParts.join('') + ' 源头工厂';
-      }
-
-      var beltFallback = document.getElementById('matchedBeltDisplay');
-      if (beltFallback) {
-        beltFallback.textContent = 'Yiwu / Shenzhen / Ningbo Export Cluster (义乌/深圳/宁波综合跨境源头产业带)';
-      }
-
-      // Live Cloud Translation for ANY English word or phrase
-      if (_cloudTransTimer) clearTimeout(_cloudTransTimer);
-      _cloudTransTimer = setTimeout(function () {
-        var q = encodeURIComponent(rawName.trim());
-        fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t&q=' + q)
-          .then(function (r) { return r.json(); })
-          .then(function (data) {
-            if (data && data[0] && data[0][0] && data[0][0][0]) {
-              var translated = data[0].map(function (seg) { return seg[0]; }).join('').trim();
-              if (translated) {
-                document.getElementById('cnKeywordInput').value = translated + ' 源头工厂';
-                updateNegotiationScript();
-              }
-            }
-          })
-          .catch(function () {});
-      }, 220);
-    }
-
-    function updateNegotiationScript() {
-      var kw = document.getElementById('cnKeywordInput').value || '磁吸桌面收纳盒';
-      var qty = document.getElementById('batchQtyInput').value || '200';
-      var script = '王总您好，我们是做北美亚马逊与TikTok跨境专供的采购团队，目前正在为下季度备货选款。看到贵厂的【' + kw + '】，想先拿3个样品看下做工和材质。如果测评达标，首单预计' + qty + '件起订（后续按月返单），请问贵厂支持激光丝印Logo和彩盒定制吗？请发一份梯度出厂报价单（EXW不含税价）及外箱体积重量参数，谢谢！';
-      document.getElementById('negotiationScriptBox').value = script;
-    }
-
-    // ==================== RENDER CASE LIBRARY ====================
-    function renderCaseLibrary() {
-      var grid = document.getElementById('caseCardsGrid');
-      var html = '';
-      for (var i = 0; i < presets.length; i++) {
-        var p = presets[i];
-        var usdExw = (p.rmbPrice / 6.69).toFixed(2);
-        html += '<div class="bg-slate-900/90 border border-slate-800 hover:border-teal-500/50 rounded-xl p-4 flex flex-col justify-between gap-3 transition">' +
-          '<div>' +
-            '<div class="flex items-center justify-between gap-2">' +
-              '<span class="text-xs font-bold text-teal-400 uppercase tracking-wider">' + p.industrialBelt + '</span>' +
-              '<span class="text-xs px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-300 font-semibold">1688 ¥' + p.rmbPrice + ' ($' + usdExw + ') → US $' + p.retailPrice + '</span>' +
-            '</div>' +
-            '<h3 class="text-base font-bold text-white mt-1.5">' + p.name + '</h3>' +
-            '<div class="mt-2 text-xs text-slate-400 flex flex-wrap gap-x-4 gap-y-1">' +
-              '<span>1688 Keyword: <strong class="text-amber-300">' + p.cnKeyword + '</strong></span>' +
-              '<span>AliExpress Mid-Price: <strong class="text-rose-300">$' + p.aliPrice.toFixed(2) + '</strong></span>' +
-              '<span>Weight: <strong class="text-slate-200">' + p.weight + ' kg</strong></span>' +
-            '</div>' +
-          '</div>' +
-          '<div class="flex items-center gap-2 pt-2 border-t border-slate-800/80">' +
-            '<button type="button" data-case-idx="' + i + '" class="case-load-action flex-1 py-2 px-3 rounded-lg bg-blue-600/25 hover:bg-blue-600/40 border border-blue-500/40 text-blue-200 text-xs font-semibold transition">' +
-              (currentLang === 'zh' ? '载入计算器与验厂器 →' : 'Load into Calculator & Verifier →') +
-            '</button>' +
-            '<button type="button" data-case-kw="' + p.cnKeyword + '" class="case-copy-kw py-2 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-teal-300 text-xs font-semibold transition">' +
-              (currentLang === 'zh' ? '复制1688词' : 'Copy 1688 Keyword') +
-            '</button>' +
-          '</div>' +
-        '</div>';
-      }
-      grid.innerHTML = html;
-
-      var loadBtns = grid.querySelectorAll('.case-load-action');
-      for (var j = 0; j < loadBtns.length; j++) {
-        loadBtns[j].addEventListener('click', function () {
-          var idx = parseInt(this.getAttribute('data-case-idx'), 10);
-          loadPreset(idx);
-          switchTab('calculator');
-        });
-      }
-
-      var copyBtns = grid.querySelectorAll('.case-copy-kw');
-      for (var k = 0; k < copyBtns.length; k++) {
-        copyBtns[k].addEventListener('click', function () {
-          var kw = this.getAttribute('data-case-kw');
-          copyTextToClipboard(kw, 'Copied 1688 keyword: ' + kw);
-        });
-      }
-    }
-
-    function loadPreset(index) {
-      var p = presets[index];
+    function loadPreset(idx) {
+      var p = presets[idx];
       if (!p) return;
       document.getElementById('prodNameInput').value = p.name;
       document.getElementById('cnKeywordInput').value = p.cnKeyword;
-      var beltDisp = document.getElementById('matchedBeltDisplay');
-      if (beltDisp && p.industrialBelt) beltDisp.textContent = p.industrialBelt;
+      document.getElementById('matchedBeltText').textContent = p.belt;
       document.getElementById('rmbPriceInput').value = p.rmbPrice;
       document.getElementById('aliPriceInput').value = p.aliPrice;
       document.getElementById('retailPriceInput').value = p.retailPrice;
@@ -1311,196 +626,94 @@
       document.getElementById('unitWeightInput').value = p.weight;
       document.getElementById('batchQtyInput').value = p.batchQty;
       document.getElementById('salesChannelSelect').value = p.channel;
-
-      document.getElementById('verBadgeSelect').value = p.badgeVal;
-      document.getElementById('verLicenseSelect').value = p.licenseVal;
-      document.getElementById('verRepurchaseSelect').value = p.repurchaseVal;
-      document.getElementById('verClusterSelect').value = p.clusterVal;
-
       recalculateEconomics();
-      recalculateVerifier();
-      showToast((currentLang === 'zh' ? '已载入案例：' : 'Loaded teardown: ') + p.name);
+      showToast('Loaded preset: ' + p.name);
     }
 
-    // ==================== LANGUAGE TOGGLE ====================
-    function applyLanguage() {
-      var dict = i18nDict[currentLang];
-      var nodes = document.querySelectorAll('[data-i18n]');
-      for (var i = 0; i < nodes.length; i++) {
-        var key = nodes[i].getAttribute('data-i18n');
-        if (dict[key]) {
-          nodes[i].textContent = dict[key];
-        }
-      }
-      var langBtn = document.getElementById('langToggleBtn');
-      langBtn.textContent = currentLang === 'en' ? '中文 (董事长内参视图)' : 'EN (US Seller View)';
-      recalculateEconomics();
-      recalculateVerifier();
-      renderCaseLibrary();
-    }
-
-    // ==================== INITIALIZATION & EVENT LISTENERS ====================
-    window.addEventListener('DOMContentLoaded', function () {
-      // Tab navigation
+    window.addEventListener('DOMContentLoaded', function() {
       var tabBtns = document.querySelectorAll('.nav-tab-btn');
       for (var i = 0; i < tabBtns.length; i++) {
-        tabBtns[i].addEventListener('click', function () {
-          switchTab(this.getAttribute('data-tab'));
-        });
+        tabBtns[i].addEventListener('click', function() { switchTab(this.getAttribute('data-tab')); });
+      }
+      var pBtns = document.querySelectorAll('.preset-load-btn');
+      for (var j = 0; j < pBtns.length; j++) {
+        pBtns[j].addEventListener('click', function() { loadPreset(parseInt(this.getAttribute('data-preset'), 10)); switchTab('calculator'); });
       }
 
-      // Preset bar buttons
-      var presetBtns = document.querySelectorAll('.preset-load-btn');
-      for (var j = 0; j < presetBtns.length; j++) {
-        presetBtns[j].addEventListener('click', function () {
-          var idx = parseInt(this.getAttribute('data-preset'), 10);
-          loadPreset(idx);
-        });
-      }
-
-      // Auto-translate English product name to 1688 Chinese keyword & industrial belt
-      var prodInputEl = document.getElementById('prodNameInput');
-      if (prodInputEl) {
-        prodInputEl.addEventListener('input', function () {
-          autoTranslateProductTo1688(this.value);
-          recalculateEconomics();
-        });
-      }
-
-      // Quick keyword demo chips
-      var quickChips = document.querySelectorAll('.quick-kw-chip');
-      for (var q = 0; q < quickChips.length; q++) {
-        quickChips[q].addEventListener('click', function () {
-          var sampleName = this.getAttribute('data-quick-kw');
-          document.getElementById('prodNameInput').value = sampleName;
-          autoTranslateProductTo1688(sampleName);
-          recalculateEconomics();
-          showToast('Auto-matched 1688 keyword for: ' + sampleName);
-        });
-      }
-
-      // Direct 1688 search button using native GBK form submission (zero mojibake)
-      var open1688Btn = document.getElementById('open1688SearchBtn');
-      if (open1688Btn) {
-        open1688Btn.addEventListener('click', function () {
-          var kw = document.getElementById('cnKeywordInput').value.trim() || '源头工厂';
-          copyTextToClipboard(kw, '已复制中文词并跳转1688: ' + kw);
-          var gbkForm = document.getElementById('native1688GbkForm');
-          var gbkInput = document.getElementById('native1688GbkInput');
-          if (gbkForm && gbkInput) {
-            gbkInput.value = kw;
-            gbkForm.submit();
-          } else {
-            window.open('https://s.1688.com/selloffer/offer_search.htm?keywords=' + encodeURIComponent(kw), '_blank', 'noopener,noreferrer');
+      var prodIn = document.getElementById('prodNameInput');
+      function autoMatchKw(val) {
+        var low = val.toLowerCase();
+        for (var m = 0; m < autoDict.length; m++) {
+          for (var n = 0; n < autoDict[m].k.length; n++) {
+            if (low.indexOf(autoDict[m].k[n]) !== -1) {
+              document.getElementById('cnKeywordInput').value = autoDict[m].cn;
+              document.getElementById('matchedBeltText').textContent = autoDict[m].belt;
+              document.getElementById('htsCategorySelect').value = autoDict[m].hts;
+              recalculateEconomics();
+              return;
+            }
           }
+        }
+      }
+      prodIn.addEventListener('input', function() { autoMatchKw(this.value); recalculateEconomics(); });
+
+      var tryChips = document.querySelectorAll('.try-kw-chip');
+      for (var c = 0; c < tryChips.length; c++) {
+        tryChips[c].addEventListener('click', function() {
+          var t = this.getAttribute('data-try');
+          prodIn.value = t;
+          autoMatchKw(t);
+          showToast('Auto-translated: ' + t);
         });
       }
 
-      // Calculator inputs
-      var calcInputIds = [
-        'fxRateInput', 'prodNameInput', 'cnKeywordInput', 'rmbPriceInput',
-        'aliPriceInput', 'retailPriceInput', 'htsCategorySelect', 'customHtsRateInput',
-        'shippingModeSelect', 'unitWeightInput', 'batchQtyInput', 'salesChannelSelect'
-      ];
-      for (var k = 0; k < calcInputIds.length; k++) {
-        var el = document.getElementById(calcInputIds[k]);
-        if (el) {
-          el.addEventListener('input', recalculateEconomics);
-          el.addEventListener('change', recalculateEconomics);
-        }
+      var ids = ['fxRateInput', 'cnKeywordInput', 'rmbPriceInput', 'aliPriceInput', 'retailPriceInput', 'htsCategorySelect', 'shippingModeSelect', 'unitWeightInput', 'batchQtyInput', 'salesChannelSelect'];
+      for (var k = 0; k < ids.length; k++) {
+        document.getElementById(ids[k]).addEventListener('input', recalculateEconomics);
+        document.getElementById(ids[k]).addEventListener('change', recalculateEconomics);
       }
 
-      // Verifier inputs
-      var verInputs = document.querySelectorAll('.ver-input');
-      for (var m = 0; m < verInputs.length; m++) {
-        verInputs[m].addEventListener('change', recalculateVerifier);
-      }
+      var vEls = document.querySelectorAll('.ver-input');
+      for (var v = 0; v < vEls.length; v++) vEls[v].addEventListener('change', recalculateVerifier);
 
-      // Copy buttons
-      document.getElementById('copyKwBtn').addEventListener('click', function () {
+      document.getElementById('copyKwBtn').addEventListener('click', function() {
         var kw = document.getElementById('cnKeywordInput').value;
-        copyTextToClipboard(kw, 'Copied 1688 keyword: ' + kw);
+        if (navigator.clipboard) navigator.clipboard.writeText(kw);
+        showToast('Copied 1688 keyword: ' + kw);
       });
-
-      document.getElementById('copyScriptBtn').addEventListener('click', function () {
+      document.getElementById('copyScriptBtn').addEventListener('click', function() {
         var sc = document.getElementById('negotiationScriptBox').value;
-        copyTextToClipboard(sc, 'Copied Chinese B2B factory script!');
+        if (navigator.clipboard) navigator.clipboard.writeText(sc);
+        showToast('Copied Chinese factory script!');
       });
+      document.getElementById('resetCalcBtn').addEventListener('click', function() { loadPreset(0); });
 
-      // Reset defaults
-      document.getElementById('resetCalcBtn').addEventListener('click', function () {
-        loadPreset(0);
-      });
-
-      // CTA jumps to Audit tab and scrolls to checkout button (or opens checkout directly if already on Audit tab)
-      document.getElementById('headerAuditBtn').addEventListener('click', function () {
-        var auditView = document.getElementById('view-audit');
-        if (auditView && !auditView.classList.contains('hidden')) {
-          handleOrder();
-        } else {
-          switchTab('audit');
-          var btn = document.getElementById('submitAuditOrderBtn');
-          if (btn) btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          showToast(currentLang === 'zh' ? '已为您打开 $29 结账台，再次点击绿色按钮即可跳转 Creem 付款！' : 'Switched to $29 Pro Dossier Checkout — click the green Order button below!');
-        }
-      });
-      document.getElementById('calcToAuditBtn').addEventListener('click', function () {
-        switchTab('audit');
-        var btn = document.getElementById('submitAuditOrderBtn');
-        if (btn) btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        showToast(currentLang === 'zh' ? '请确认下方需求后点击绿色按钮跳转 Creem 支付 ($29)' : 'Confirm your product URL below and click Order ($29 USD) to checkout!');
-      });
-
-      // Language switcher
-      document.getElementById('langToggleBtn').addEventListener('click', function () {
+      document.getElementById('langToggleBtn').addEventListener('click', function() {
         currentLang = currentLang === 'en' ? 'zh' : 'en';
-        applyLanguage();
-        showToast(currentLang === 'zh' ? '已切换至：中文（董事长内参视图）' : 'Switched to: English (US Buyer View)');
+        this.textContent = currentLang === 'en' ? '中文 (董事长视图)' : 'EN (US Seller View)';
+        document.querySelector('[data-i18n="calc_title"]').textContent = currentLang === 'zh' ? '1688 出厂价到美国仓库到岸成本与真工厂核验系统' : '1688 EXW to US Doorstep Landed Cost & Factory Verifier';
+        showToast(currentLang === 'zh' ? '已切换至中文内参视图' : 'Switched to English View');
       });
 
-      // Direct Creem $29 Checkout Order Handler
-      function handleOrder(e) {
-        try {
-          var uEl = document.getElementById('auditUrlInput');
-          var sEl = document.getElementById('auditSpecInput');
-          var eEl = document.getElementById('auditEmailInput');
-          var pEl = document.getElementById('prodNameInput');
-          var urlVal = (uEl && uEl.value.trim()) || 'https://www.amazon.com/dp/B0EXAMPLE (Magnetic Desk Organizer)';
-          var specVal = (sEl && sEl.value.trim()) || '200 units with custom logo box';
-          var emailVal = (eEl && eEl.value.trim()) || 'founder@yourbrand.com';
-          var prodName = (pEl && pEl.value) || 'Custom 1688 SKU';
-
-          var summary = 'ORDER: SinoScout Pro Digital Dossier ($29 USD · #SS-2026-884)\n' +
-            'Product Reference: ' + prodName + '\n' +
-            'Target Listing URL: ' + urlVal + '\n' +
-            'Order Specs & MOQ: ' + specVal + '\n' +
-            'Client Delivery Email: ' + emailVal;
-
-          var tText = document.getElementById('auditTicketText');
-          var tPrev = document.getElementById('auditTicketPreview');
-          if (tText) tText.textContent = summary;
-          if (tPrev) tPrev.classList.remove('hidden');
-          copyTextToClipboard(summary, 'Opening Creem $29 Checkout...');
-        } catch (err) {}
-        // If called from header button (not native <a> click), open CHECKOUT_URL directly
-        if (!e || !e.currentTarget || e.currentTarget.tagName !== 'A') {
-          var win = window.open(CHECKOUT_URL, '_blank');
-          if (!win) window.location.href = CHECKOUT_URL;
-        }
+      var grid = document.getElementById('caseCardsGrid');
+      var html = '';
+      for (var x = 0; x < presets.length; x++) {
+        var pr = presets[x];
+        html += '<div class="bg-slate-900/90 border border-slate-800 rounded-xl p-4 flex flex-col justify-between gap-3">' +
+          '<div><span class="text-xs font-bold text-teal-400">' + pr.belt + '</span>' +
+          '<h3 class="text-base font-bold text-white mt-1">' + pr.name + '</h3>' +
+          '<p class="text-xs text-slate-400 mt-1">1688 EXW: <strong class="text-teal-300">¥' + pr.rmbPrice + '</strong> vs AliExpress <strong class="text-rose-300">$' + pr.aliPrice + '</strong> → US Retail <strong class="text-emerald-300">$' + pr.retailPrice + '</strong></p></div>' +
+          '<button type="button" data-pidx="' + x + '" class="case-load-btn py-2 px-3 rounded-lg bg-blue-600/25 hover:bg-blue-600/40 border border-blue-500/40 text-blue-200 text-xs font-semibold">Load into Calculator →</button></div>';
+      }
+      grid.innerHTML = html;
+      var cBtns = grid.querySelectorAll('.case-load-btn');
+      for (var y = 0; y < cBtns.length; y++) {
+        cBtns[y].addEventListener('click', function() {
+          loadPreset(parseInt(this.getAttribute('data-pidx'), 10));
+          switchTab('calculator');
+        });
       }
 
-      var submitBtn = document.getElementById('submitAuditOrderBtn');
-      if (submitBtn) {
-        submitBtn.addEventListener('click', handleOrder);
-      }
-
-      document.getElementById('copyTicketBtn').addEventListener('click', function () {
-        var txt = document.getElementById('auditTicketText').textContent;
-        copyTextToClipboard(txt, 'Copied Pro Dossier Specs!');
-      });
-
-      // Initial render
-      renderCaseLibrary();
       recalculateEconomics();
       recalculateVerifier();
     });

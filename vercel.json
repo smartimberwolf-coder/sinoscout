@@ -1,5 +1,4 @@
 {
-  "version": 2,
-  "name": "sinoscout",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "trailingSlash": false
 }
